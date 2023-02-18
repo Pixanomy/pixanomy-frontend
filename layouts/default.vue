@@ -8,10 +8,10 @@
       </template>
       
       <v-app-bar-title><a class="logobrand" href="/">
-          <v-icon start><v-img src="/images/logo.png"></v-img></v-icon>Meeovi
+          <v-icon start icon="fas fa-photo-film"></v-icon>Pixanomy
         </a></v-app-bar-title>
 
-      <v-text-field density="compact" variant="solo" label="Search Meeovi" append-inner-icon="fas fa-search" single-line
+      <v-text-field density="compact" variant="solo" label="Search Pixanomy" append-inner-icon="fas fa-search" single-line
         hide-details @click:append-inner="onClick"></v-text-field>
       <v-spacer></v-spacer>
 
@@ -80,36 +80,26 @@
             </v-list-item>
 
             <v-list density="compact" nav>
-              <h6>Trending</h6>
-              <v-list-item prepend-icon="fas fa-cart-plus" title="What's New" value="What's New" href="/categories/new"></v-list-item>
+              <h6>Explore</h6>
+              <v-list-item prepend-icon="fas fa-cart-plus" title="Explore" value="Explore" href="/explore"></v-list-item>
               <v-divider></v-divider>
               <h6>Shop By Department</h6>
               <v-list-group prepend-icon="fas fa-building">
                 <template v-slot:activator="{ props }">
                   <v-list-item v-bind="props" title="Shop by Department"></v-list-item>
                 </template>
-                <v-list-item prepend-icon="fas fa-book" title="Books" value="Books" href="/categories/books"></v-list-item>
+                <v-list-item prepend-icon="fas fa-book" title="picBooks" value="picBooks" href="/categories/picbooks"></v-list-item>
                 <v-list-item prepend-icon="fas fa-music" title="Music" value="Music" href="/categories/music"></v-list-item>
-                <v-list-item prepend-icon="fas fa-play" title="Theater" value="Theater" href="/categories/theater"></v-list-item>
-                <v-list-item prepend-icon="fas fa-gamepad" title="Games" value="Games" href="/categories/games"></v-list-item>
-                <v-list-item prepend-icon="fas fa-podcast" title="Podcasts" value="Podcasts" href="/categories/podcasts"></v-list-item>
-                <v-list-item prepend-icon="fas fa-volleyball" title="Sports & Fitness" value="Sports & Fitness" href="/categories/sportsfitness"></v-list-item>
-                <v-list-item prepend-icon="fas fa-paw" title="Pets" value="Pets" href="/categories/pets"></v-list-item>
               </v-list-group>
               <v-divider></v-divider>
               <h6>Social</h6>
-              <v-list-item prepend-icon="fas fa-video" title="Meeovi Live" value="live" href="/categories/live"> </v-list-item>
+              <v-list-item prepend-icon="fas fa-video" title="Pixanomy Live" value="live" href="/categories/live"> </v-list-item>
               <v-list-item prepend-icon="fas fa-users" title="Social Feed" value="feed" href="/social/newsfeed"> </v-list-item>
               <v-list-item prepend-icon="fas fa-people-group" title="Groups" value="groups" href="/social/groups"> </v-list-item>
-              <v-divider></v-divider>
-              <h6>Department Stores</h6>
-              <v-list-item prepend-icon="fas fa-compass-drafting" title="Meeovi Crafts" value="meeovi crafts" href="/crafts/"></v-list-item>
-              <v-list-item prepend-icon="fas fa-person-shelter" title="Meeovi Yardsale" value="meeovi yardsale" href="/yardsale/"></v-list-item>
-              <v-list-item prepend-icon="fas fa-tablet-button" title="Meeovi Appstore" value="meeovi appstore" href="/categories/appstore"></v-list-item>
+              <v-list-item prepend-icon="fas fa-tablet-button" title="Studio" value="Studio" href="/product/Studio/"></v-list-item>
               <v-divider></v-divider>
               <h6>Deals Corner</h6>
               <v-list-item prepend-icon="fas fa-tablet-button" title="Deals" value="Deals" href="/deals"></v-list-item>
-              <v-list-item prepend-icon="fas fa-tablet-button" title="Exclusives" value="exclusives" href="/categories/exclusives"></v-list-item>
               <v-divider></v-divider>
               <h6>My Account</h6>
               <v-list-group prepend-icon="fas fa-user-circle" value="My Account">
@@ -184,7 +174,7 @@ import live from '../components/Catbar/live.vue'
     ref
   } from 'vue'
 
-  const theme = ref('light')
+  const theme = ref('dark')
 
   function onClick() {
     theme.value = theme.value === 'light' ? 'dark' : 'light'

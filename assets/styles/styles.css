@@ -33,6 +33,11 @@ body {
     background-color: transparent !important;
 }
 
+.header4 {
+    background-position: top;
+    background-size: cover !important;
+}
+
 /******************* Main Section CSS *********/
 
 #mainSection {

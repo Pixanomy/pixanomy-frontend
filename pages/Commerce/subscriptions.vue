@@ -1,20 +1,48 @@
 <template>
     <div>
-        <section data-bs-version="5.1" class="shop2 marketm4_shop2 cid-twaWgxQFRv" id="shop2-4k" data-sortbtn="btn-primary">
+        <section data-bs-version="5.1" class="features16 cid-twc33vqs90" id="features16-1i" data-sortbtn="btn-primary">
 
-	
+    
 
-	
+    
+<div class="container-fluid">
+    <div class="row main align-items-center">
+        <div class="col-md-6 image-element align-self-stretch">
+            <div class="img-wrap" style="width: 80%; height: 80%;">
+                <img src="../../assets/images/mbr-1553x1553.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-md-6 text-element">
+            <div class="text-content">
+                <h2 class="mbr-title pt-2 mbr-fonts-style align-left mbr-white display-2">
+                    Subscriptions
+                </h2>
+                
+                <div class="mbr-section-text">
+                    <p class="mbr-text pt-3 mbr-light mbr-fonts-style align-left mbr-white display-7">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aliquam, fugit odio porro quas molestiae placeat voluptas id rem vero.
+                    </p>
+                </div>
+                <div class="mbr-section-btn pt-3 align-left"><a class="btn btn-md btn-success display-4" href="/admin/my-account">My Account</a></div>
+            </div>
+        </div>
+    </div>
+</div>          
+</section>
+
+<section data-bs-version="5.1" class="shop2 marketm4_shop2 cid-twc3kYGo4j" id="shop2-1j" data-sortbtn="btn-primary">
+
+
+
+
 
 <div class="container">
     <div class="row justify-content-between align-items-center">
         <div class="mb-md-0 col-xl-5 col-lg-4 col-md-2 col-sm-6 d-md-flex align-items-stretch image justify-content-end">
-            <img src="../../assets/images/big-height.jpg" alt="" data-target="#mbrCarousel" data-bs-target="#mbrCarousel" data-slide-to="0" data-bs-slide-to="0" title="">
+            <img src="../../assets/images/mbr-1036x1036.jpg" alt="" data-target="#mbrCarousel" data-bs-target="#mbrCarousel" data-slide-to="0" data-bs-slide-to="0" title="">
         </div>
         <div class="col-xl-6 col-lg-7 col-md-12 content__block">
-            <h2 class="mbr-section-title mbr-bold mbr-fonts-style display-5">
-                Subscriptions
-            </h2>
+            
             
             <div class="block__products">
                 

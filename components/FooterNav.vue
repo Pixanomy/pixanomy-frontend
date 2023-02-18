@@ -2,7 +2,7 @@
     <v-footer border>
         <v-row justify="center" no-gutters>
             <v-col class="text-center mt-4" cols="3">
-                <h6>MEEOVI</h6>
+                <h6>PIXANOMY</h6>
                 <v-list-item title="About Us" value="about us" href="/about"></v-list-item>
                 <v-list-item title="Careers" value="Careers" href="/careers"></v-list-item>
                 <v-list-item title="Affiliates" value="Affiliates" href="/affiliates"></v-list-item>
@@ -24,7 +24,6 @@
                 <v-list-item title="My Loyalty" value="my Loyalty" href="/admin/user/"></v-list-item>
                 <v-list-item title="My Reviews" value="my Reviews" href="/admin/user/"></v-list-item>
                 <v-list-item title="My Hearts" value="my Hearts" href="/admin/user/"></v-list-item>
-                <v-list-item title="My Wish List" value="my Wish List" href="/admin/user/"></v-list-item>
                 <v-list-item title="My Designers" value="my Designers" href="/admin/user/"></v-list-item>
             </v-col>
 

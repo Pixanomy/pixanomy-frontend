@@ -1,134 +1,129 @@
 <template>
     <div>
-        <section class="info1 cid-tuzvvh2C2A" id="info1-3m">
+        <section data-bs-version="5.1" class="features16 cid-twc33vqs90" id="features16-1i" data-sortbtn="btn-primary">
+
     
+
     
-    <div class="align-center container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-8">
-                <h3 class="mbr-section-title mb-4 mbr-fonts-style display-1">
-                    <strong>Wish Lists</strong></h3>
+<div class="container-fluid">
+    <div class="row main align-items-center">
+        <div class="col-md-6 image-element align-self-stretch">
+            <div class="img-wrap" style="width: 80%; height: 80%;">
+                <img src="../../../assets/images/mbr-1553x1553.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-md-6 text-element">
+            <div class="text-content">
+                <h2 class="mbr-title pt-2 mbr-fonts-style align-left mbr-white display-2">
+                    New Arrivals
+                </h2>
                 
-                
+                <div class="mbr-section-text">
+                    <p class="mbr-text pt-3 mbr-light mbr-fonts-style align-left mbr-white display-7">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aliquam, fugit odio porro quas molestiae placeat voluptas id rem vero.
+                    </p>
+                </div>
+                <div class="mbr-section-btn pt-3 align-left"><a class="btn btn-md btn-success display-4" href="/admin/my-account">My Account</a></div>
             </div>
         </div>
     </div>
+</div>          
 </section>
 
-<section class="features10 cid-tuzvsTmsjB" id="features11-3l">
-    <!---->
-    
-    
-    <div class="container">
-        <div class="title">
-            <h3 class="mbr-section-title mbr-fonts-style mb-4 display-2">
-                <strong>Product List</strong>
-            </h3>
+<section data-bs-version="5.1" class="shop2 marketm4_shop2 cid-twc3kYGo4j" id="shop2-1j" data-sortbtn="btn-primary">
+
+
+
+
+
+<div class="container">
+    <div class="row justify-content-between align-items-center">
+        <div class="mb-md-0 col-xl-5 col-lg-4 col-md-2 col-sm-6 d-md-flex align-items-stretch image justify-content-end">
+            <img src="../../../assets/images/mbr-1036x1036.jpg" alt="" data-target="#mbrCarousel" data-bs-target="#mbrCarousel" data-slide-to="0" data-bs-slide-to="0" title="">
+        </div>
+        <div class="col-xl-6 col-lg-7 col-md-12 content__block">
             
-        </div>
-        <div class="card">
-            <div class="card-wrapper">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-3">
-                        <div class="image-wrapper">
-                            <img src="../../assets/images/product1.jpg" alt="Mobirise" title="">
-                        </div>
+            
+            <div class="block__products">
+                
+                
+                
+            <div class="d-sm-flex align-items-center product__item">
+                    <div class="image__item flex-shrink-0">
+                        <img src="../../../assets/images/design31.jpg" alt="" data-target="#mbrCarousel" data-bs-target="#mbrCarousel" data-slide-to="0" data-bs-slide-to="0" title="">
                     </div>
-                    <div class="col-12 col-md">
-                        <div class="card-box">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="top-line">
-                                        <h4 class="card-title mbr-fonts-style display-5"><strong>Camera</strong></h4>
-                                        <p class="cost mbr-fonts-style display-5">
-                                            $39</p>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="bottom-line">
-                                        <p class="mbr-text mbr-fonts-style m-0 display-7">
-                                            Themes in the Mobirise website builder offer multiple blocks: intros,
-                                            sliders, galleries, forms, articles, and so on. Start a project and click on
-                                            the red plus buttons to see the blocks available for your theme.
-                                        </p>
-                                    </div>
-                                </div>
+                    <div class="item__text">
+                        <div class="d-flex justify-content-between align-items-baseline item__title">
+                            <p class="name__item mbr-medium mbr-fonts-style display-4">
+                                PRODUCT NAME
+                            </p>
+                            <p class="item__price mbr-fonts-style display-4">
+                                $500
+                            </p>
+                        </div>
+                        <div class="item__descr">
+                            <p class="descr__text mbr-fonts-style display-4">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, quam.
+                            </p>
+                        </div>
+                        <div class="item__buttons">
+                            <div class="mbr-section-btn">
+                                <a class="btn btn-sm btn-info display-4" href="#">Buy Now</a><a class="btn btn-sm btn-warning-outline display-4" href="#">More Info</a>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-wrapper">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-3">
-                        <div class="image-wrapper">
-                            <img src="../../assets/images/product2.jpg" alt="Mobirise" title="">
-                        </div>
+                </div><div class="d-sm-flex align-items-center product__item">
+                    <div class="image__item flex-shrink-0">
+                        <img src="../../../assets/images/design21.jpg" alt="" data-target="#mbrCarousel" data-bs-target="#mbrCarousel" data-slide-to="0" data-bs-slide-to="0" title="">
                     </div>
-                    <div class="col-12 col-md">
-                        <div class="card-box">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="top-line">
-                                        <h4 class="card-title mbr-fonts-style display-5"><strong>Mug</strong></h4>
-                                        <p class="cost mbr-fonts-style display-5">
-                                            $49</p>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="bottom-line">
-                                        <p class="mbr-text mbr-fonts-style m-0 display-7">
-                                            Themes in the Mobirise website builder offer multiple blocks: intros,
-                                            sliders, galleries, forms, articles, and so on. Start a project and click on
-                                            the red plus buttons to see the blocks available for your theme.
-                                        </p>
-                                    </div>
-                                </div>
+                    <div class="item__text">
+                        <div class="d-flex justify-content-between align-items-baseline item__title">
+                            <p class="name__item mbr-medium mbr-fonts-style display-4">
+                                PRODUCT NAME
+                            </p>
+                            <p class="item__price mbr-fonts-style display-4">
+                                $100
+                            </p>
+                        </div>
+                        <div class="item__descr">
+                            <p class="descr__text mbr-fonts-style display-4">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, quam.
+                            </p>
+                        </div>
+                        <div class="item__buttons">
+                            <div class="mbr-section-btn">
+                                <a class="btn btn-sm btn-info display-4" href="#">Buy Now</a><a class="btn btn-sm btn-warning-outline display-4" href="#">More Info</a>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-wrapper">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-3">
-                        <div class="image-wrapper">
-                            <img src="../../assets/images/product3.jpg" alt="Mobirise" title="">
-                        </div>
+                </div><div class="d-sm-flex align-items-center product__item">
+                    <div class="image__item flex-shrink-0">
+                        <img src="../../../assets/images/design20.jpg" alt="" data-target="#mbrCarousel" data-bs-target="#mbrCarousel" data-slide-to="0" data-bs-slide-to="0" title="">
                     </div>
-                    <div class="col-12 col-md">
-                        <div class="card-box">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="top-line">
-                                        <h4 class="card-title mbr-fonts-style display-5"><strong>Coffee</strong></h4>
-                                        <p class="cost mbr-fonts-style display-5">
-                                            $49</p>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="bottom-line">
-                                        <p class="mbr-text mbr-fonts-style m-0 display-7">
-                                            Themes in the Mobirise website builder offer multiple blocks: intros,
-                                            sliders, galleries, forms, articles, and so on. Start a project and click on
-                                            the red plus buttons to see the blocks available for your theme.
-                                        </p>
-                                    </div>
-                                </div>
+                    <div class="item__text">
+                        <div class="d-flex justify-content-between align-items-baseline item__title">
+                            <p class="name__item mbr-medium mbr-fonts-style display-4">
+                                PRODUCT NAME
+                            </p>
+                            <p class="item__price mbr-fonts-style display-4">
+                                $94.55
+                            </p>
+                        </div>
+                        <div class="item__descr">
+                            <p class="descr__text mbr-fonts-style display-4">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, quam.
+                            </p>
+                        </div>
+                        <div class="item__buttons">
+                            <div class="mbr-section-btn">
+                                <a class="btn btn-sm btn-info display-4" href="#">Buy Now</a><a class="btn btn-sm btn-warning-outline display-4" href="#">More Info</a>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                </div></div>
         </div>
-        
-        
-        
     </div>
+</div>
 </section>
     </div>
 </template>

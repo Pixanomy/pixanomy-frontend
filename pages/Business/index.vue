@@ -12,6 +12,6 @@ export default {
 
 <script setup>
     useHead({
-        title: 'Meeovi Business',
+        title: 'Pixanomy Business',
     })
 </script>

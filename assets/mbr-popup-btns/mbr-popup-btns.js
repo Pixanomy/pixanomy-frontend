@@ -1,1 +1,10 @@
-var $,isJQuery="function"==typeof jQuery;isJQuery&&($=jQuery);var isBuilder=document.querySelector("html").classList.contains("is-builder");isBuilder||"undefined"!==typeof window.initPopupBtnPlugin||(window.initPopupBtnPlugin=!0,document.querySelectorAll("section.popup-btn-cards .card-wrapper").forEach(function(a){a.classList.add("popup-btn")}));
+var isBuilder = $('html').hasClass('is-builder');
+
+if (!isBuilder) {
+    if(typeof window.initPopupBtnPlugin === 'undefined'){
+        window.initPopupBtnPlugin = true;
+        $('section.popup-btn-cards .card-wrapper').each(function(index, el) {
+            $(this).addClass('popup-btn');
+        });        
+    }
+}
