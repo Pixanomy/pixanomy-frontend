@@ -101,8 +101,8 @@
                 <template v-slot:activator="{ props }">
                   <v-list-item v-bind="props" title="Shop by Department"></v-list-item>
                 </template>
+                <v-list-item title="Categories Home" value="Categories" href="/categories/"></v-list-item>
                 <v-list-item title="picBooks" value="picBooks" href="/categories/picbooks"></v-list-item>
-                <v-list-item title="Music" value="Music" href="/categories/"></v-list-item>
               </v-list-group>
               <v-divider></v-divider>
               <h6>Social</h6>

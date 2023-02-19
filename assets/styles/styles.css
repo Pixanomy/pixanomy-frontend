@@ -37,7 +37,7 @@ body {
     background-repeat: no-repeat;
     background-color: transparent;
     background-position: center;
-    background-size: contain !important;
+    background-size: cover !important;
 }
 
 .settingsCard, .settingsCard table {
