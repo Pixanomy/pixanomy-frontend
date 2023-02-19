@@ -1,95 +1,104 @@
 <template>
-    <div>
-            <v-card class="settingsCard">
-                <v-toolbar color="primary">
-                    <v-toolbar-title>Account Overview</v-toolbar-title>
-                </v-toolbar>
-                <div class="d-flex flex-row">
-                    <v-tabs class="settingsLeft" v-model="tab" direction="vertical" color="primary">
-                        <h5>Projects</h5>
-                        <v-tab value="option-1">
-                            <v-icon start>
-                                mdi-account
-                            </v-icon>
-                            All Projects
-                        </v-tab>
-                        <v-tab value="option-2">
-                            <v-icon start>
-                                mdi-lock
-                            </v-icon>
-                            Organizations
-                        </v-tab>
-                        <h5>Account</h5>
-                        <v-tab value="option-3">
-                            <v-icon start>
-                                mdi-access-point
-                            </v-icon>
-                            Preferences
-                        </v-tab>
-                        <v-tab value="option-4">
-                            <v-icon start>
-                                mdi-access-point
-                            </v-icon>
-                            Access Tokens
-                        </v-tab>
-                        <v-tab value="option-5">
-                            <v-icon start>
-                                mdi-access-point
-                            </v-icon>
-                            <a href="https://www.alternatecms.com/docs/guides">Guides</a>
-                        </v-tab>
-                        <v-tab value="option-6">
-                            <v-icon start>
-                                mdi-access-point
-                            </v-icon>
-                            <a href="https://www.alternatecms.com/docs/api">API References</a>
-                        </v-tab>
-                        <v-tab value="option-7">
-                            <v-icon start>
-                                mdi-access-point
-                            </v-icon>
-                            <a href="/">Logout</a>
-                        </v-tab>
-                    </v-tabs>
-                    <v-window v-model="tab" class="settingsRight">
+    <div class="settingsCard">
+        <v-card>
+            <v-toolbar color="primary">
+                <v-toolbar-title>Account Overview</v-toolbar-title>
+            </v-toolbar>
+            <div>
+                <v-tabs v-model="tab" color="primary">
+                    <v-tab value="option-1">
+                        <v-icon start>
+                            mdi-account
+                        </v-icon>
+                        Account
+                    </v-tab>
+                    <v-tab value="option-2">
+                        <v-icon start>
+                            mdi-lock
+                        </v-icon>
+                        Addresses
+                    </v-tab>
+                    <v-tab value="option-3">
+                        <v-icon start>
+                            mdi-access-point
+                        </v-icon>
+                        History
+                    </v-tab>
+                    <v-tab value="option-4">
+                        <v-icon start>
+                            mdi-access-point
+                        </v-icon>
+                        Lists
+                    </v-tab>
+                    <v-tab value="option-5">
+                        <v-icon start>
+                            mdi-access-point
+                        </v-icon>
+                        My Uploads
+                    </v-tab>
+                    <v-tab value="option-6">
+                        <v-icon start>
+                            mdi-access-point
+                        </v-icon>
+                        Recommendations
+                    </v-tab>
+                </v-tabs>
+                <v-card-text>
+                    <v-window v-model="tab">
                         <v-window-item value="option-1">
                             <v-card flat>
-                                <projects />
+                                <account />
                             </v-card>
                         </v-window-item>
                         <v-window-item value="option-2">
                             <v-card flat>
-                                <organizations />
+                                <addresses />
                             </v-card>
                         </v-window-item>
                         <v-window-item value="option-3">
                             <v-card flat>
-                                <preferences />
+                                <history />
                             </v-card>
                         </v-window-item>
                         <v-window-item value="option-4">
                             <v-card flat>
-                                <accountTokens />
+                                <lists />
+                            </v-card>
+                        </v-window-item>
+                        <v-window-item value="option-5">
+                            <v-card flat>
+                                <uploads />
+                            </v-card>
+                        </v-window-item>
+                        <v-window-item value="option-6">
+                            <v-card flat>
+                                <recommendations />
                             </v-card>
                         </v-window-item>
                     </v-window>
-                </div>
-            </v-card>
+                </v-card-text>
+
+            </div>
+        </v-card>
     </div>
 </template>
 
 <script>
- //   import projects from '~/components/user/projects.vue'
- //   import organizations from '~/components/user/organizations.vue'
- //   import preferences from '~/components/user/preferences.vue'
- //   import accountTokens from '~/components/user/account-tokens.vue'
+    import account from './account.vue'
+    import addresses from './addresses.vue'
+    import history from './history.vue'
+    import lists from './lists.vue'
+    import uploads from './my-uploads.vue'
+    import recommendations from './recommendations.vue'
 
     export default {
         components: {
-        //    projects,
-        //    organizations,
-        //    preferences,
-        //    accountTokens,
+            account,
+            addresses,
+            history,
+            lists,
+            uploads,
+            recommendations
         },
         data: () => ({
             tab: 'option-1',

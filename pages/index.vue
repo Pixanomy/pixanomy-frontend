@@ -34,9 +34,7 @@
 </script>
 
 <script setup>
-    definePageMeta({
-    layout: "noLivebar"
-    }),
+    
     useHead({
         title: 'Pixanomy',
     })

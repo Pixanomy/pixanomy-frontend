@@ -29,13 +29,20 @@ body {
     border: black;
 }
 
-.section-content, .section-name, .pricing1 {
+.section-content, .section-name, .pricing1, .info1, .features10 {
     background-color: transparent !important;
 }
 
 .header4 {
-    background-position: top;
-    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center;
+    background-size: contain !important;
+}
+
+.settingsCard, .settingsCard table {
+    width: 100% !important;
+    height: 100% !important;
 }
 
 /******************* Main Section CSS *********/

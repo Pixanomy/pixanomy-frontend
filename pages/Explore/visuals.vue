@@ -1,5 +1,6 @@
 <template>
     <div>
+    <exploremenu />
         <section data-bs-version="5.1" class="header3 cid-sqn8aWIxpX" id="header3-15">
 
     
@@ -42,13 +43,15 @@
 </template>
 
 <script>
-    export default {
+import exploremenu from '../../components/Menus//exploremenu.vue'
 
+    export default {
+        components: { exploremenu }
     }
 </script>
 
 <script setup>
     useHead({
-        title: 'Deals',
+        title: 'Visuals',
     })
 </script>
