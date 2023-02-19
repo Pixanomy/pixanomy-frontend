@@ -1,40 +1,103 @@
 <template>
     <div>
     <exploremenu />
-        <section data-bs-version="5.1" class="header3 cid-sqn8aWIxpX" id="header3-15">
+    <section data-bs-version="5.1" class="content7 supplym5 cid-twc1ewKD9d" id="content7-1f">
 
     
 
-<div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(187, 187, 187);"></div>
+    
+    
 
-<div class="align-center container">
-    <div class="row justify-content-center">
+<div class="container">
+    <div class="row">
         <div class="col-12 col-lg-6">
-            <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong>Explore</strong></h1>
-            
-            <p class="mbr-text mbr-fonts-style display-7">Beautiful works from our community</p>
-            
+            <div class="title-wrapper">
+                <h2 class="mbr-section-title mbr-fonts-style display-2">
+                    Journals</h2>
+                
+            </div>
+            <div class="image-wrapper">
+                <img src="../../assets/images/image9.jpg" alt="">
+                <div class="circle-wrapper">
+                    <span class="mbr-iconfont mobi-mbri-touch mobi-mbri"></span>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 </section>
 
-<section data-bs-version="5.1" class="features3 cid-sJIrxiiFlR" id="features3-19">
+<section data-bs-version="5.1" class="features3 cid-twc1uxZWDU" id="features3-1g">
+
+
 
 
 <div class="container">
-    
-    <div class="row mt-4">
-        
-        <div class="item features-image сol-12 col-md-6 col-lg-4 active">
-            <div class="item-wrapper">
-                <div class="item-img">
-                    <img src="../../assets/images/mbr-696x394.jpg" alt="">
+    <h2 class="mbr-section-title pb-3 mbr-bold mbr-fonts-style align-center display-2">
+        RECENT JOURNALS</h2>
+    <div class="row row-content justify-content-center">
+        <div class="card p-3 col-12 col-md-6 col-lg-4">
+            <div class="card-wrapper">
+                <div class="card-img">
+                    <img src="../../assets/images/01.jpg" title="">
                 </div>
-                
-                
+                <div class="card-box">
+                    <h4 class="card-title mbr-fonts-style mbr-bold display-7">
+                        O TEMPORA, O MORES. SEM SED DICTUM
+                    </h4>
+                    <p class="mbr-text mbr-fonts-style display-7">
+                        Lorem ipsum dolor sit amet, consectetur elit. Nulla convallis pulvinar vestibulum. Donec eleifend, sem sed dictum mattis, turpis purus. 
+                    </p>
+                      
+                </div>
+                <div class="mbr-section-btn">
+                     <a href="#" class="btn btn-warning display-4">READ MORE</a>
+                </div>  
             </div>
         </div>
+    
+        <div class="card p-3 col-12 col-md-6 col-lg-4">
+            <div class="card-wrapper">
+                <div class="card-img">
+                    <img src="../../assets/images/02.jpg" title="">
+                </div>
+                <div class="card-box">
+                    <h4 class="card-title mbr-fonts-style mbr-bold display-7">
+                       O TEMPORA, O MORES. SEM SED DICTUM
+                    </h4>
+                    <p class="mbr-text mbr-fonts-style display-7">
+                        Lorem ipsum dolor sit amet, consectetur elit. Nulla convallis pulvinar vestibulum. Donec eleifend, sem sed dictum mattis, turpis purus.
+                    </p>
+                </div>
+                <div class="mbr-section-btn">
+                     <a href="#" class="btn btn-warning display-4">READ MORE</a>
+                </div>  
+            </div>
+        </div>
+    
+        <div class="card p-3 col-12 col-md-6 col-lg-4">
+            <div class="card-wrapper">
+                <div class="card-img">
+                    <img src="../../assets/images/03.jpg" title="">
+                </div>
+                <div class="card-box">
+                    <h4 class="card-title mbr-fonts-style mbr-bold display-7">
+                       O TEMPORA, O MORES. SEM SED DICTUM
+                    </h4>
+                    <p class="mbr-text mbr-fonts-style display-7">
+                        Lorem ipsum dolor sit amet, consectetur elit. Nulla convallis pulvinar vestibulum. Donec eleifend, sem sed dictum mattis, turpis purus.
+                    </p>
+                      
+                </div>
+                <div class="mbr-section-btn">
+                    <a href="#" class="btn btn-warning display-4">READ MORE</a>
+                </div>  
+            </div>
+        </div>
+    
+        
+        
+    
         
     </div>
 </div>

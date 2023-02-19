@@ -29,7 +29,7 @@ body {
     border: black;
 }
 
-.section-content, .section-name, .pricing1, .info1, .features10 {
+.section-content, .section-name, .pricing1, .info1, .features10, .shop3 {
     background-color: transparent !important;
 }
 
