@@ -1,57 +1,58 @@
-globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/node-fetch-native/dist/polyfill.mjs';
+globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/node-fetch-native/dist/polyfill.mjs';
 import { Server } from 'node:http';
 import { tmpdir } from 'node:os';
 import { join as join$1 } from 'node:path';
 import { mkdirSync } from 'node:fs';
 import { parentPort, threadId } from 'node:worker_threads';
-import { provider, isWindows } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/std-env/dist/index.mjs';
-import { defineEventHandler, handleCacheHeaders, createEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, getRequestHeaders, setResponseHeader, getQuery, getCookie, createError, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/h3/dist/index.mjs';
-import { createRenderer } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import devalue from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/@nuxt/devalue/dist/devalue.mjs';
-import { renderToString } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/vue/server-renderer/index.mjs';
-import { parseURL, withoutBase, joinURL, withQuery, withLeadingSlash, withoutTrailingSlash, isRelative } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/ufo/dist/index.mjs';
-import destr from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/destr/dist/index.mjs';
-import { snakeCase, kebabCase, pascalCase, camelCase } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/scule/dist/index.mjs';
-import { createFetch as createFetch$1, Headers } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/ofetch/dist/node.mjs';
-import { createCall, createFetch } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/hookable/dist/index.mjs';
-import { hash } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/ohash/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/unstorage/drivers/fs.mjs';
-import defu from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/defu/dist/defu.mjs';
-import { toRouteMatcher, createRouter } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/radix3/dist/index.mjs';
-import { MeiliSearch } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/meilisearch/dist/bundles/meilisearch.cjs.js';
-import { extname, join } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/pathe/dist/index.mjs';
-import { unified } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/unified/index.js';
-import { toString } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/mdast-util-to-string/index.js';
-import { preprocess } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/micromark/dev/lib/preprocess.js';
-import { postprocess } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/micromark/dev/lib/postprocess.js';
-import { stringifyPosition } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/unist-util-stringify-position/index.js';
-import { markdownLineEnding, markdownSpace } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/micromark-util-character/dev/index.js';
-import { push, splice } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/micromark-util-chunked/dev/index.js';
-import { resolveAll } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/micromark-util-resolve-all/index.js';
-import remarkEmoji from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/remark-emoji/index.js';
-import rehypeSlug from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/rehype-slug/index.js';
-import remarkSqueezeParagraphs from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/remark-squeeze-paragraphs/index.js';
-import rehypeExternalLinks from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/rehype-external-links/index.js';
-import remarkGfm from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/remark-gfm/index.js';
-import rehypeSortAttributeValues from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/rehype-sort-attribute-values/index.js';
-import rehypeSortAttributes from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/rehype-sort-attributes/index.js';
-import rehypeRaw from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/rehype-raw/index.js';
-import remarkMDC, { parseFrontMatter } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/remark-mdc/dist/index.mjs';
-import remarkParse from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/remark-parse/index.js';
-import remark2rehype from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/remark-rehype/index.js';
-import { all } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/mdast-util-to-hast/index.js';
-import { detab } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/detab/index.js';
-import { u } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/unist-builder/index.js';
-import { encode } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/mdurl/index.js';
-import slugify from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/slugify/slugify.js';
-import { position } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/unist-util-position/index.js';
-import { visit } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/unist-util-visit/index.js';
-import { BUNDLED_LANGUAGES, BUNDLED_THEMES, getHighlighter } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/shiki-es/dist/shiki.node.mjs';
-import consola from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/unenv/runtime/npm/consola.mjs';
+import { provider, isWindows } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/std-env/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, createEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, getRequestHeaders, setResponseHeader, getQuery, getCookie, createError, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/h3/dist/index.mjs';
+import { createRenderer } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import devalue from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/@nuxt/devalue/dist/devalue.mjs';
+import { renderToString } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/vue/server-renderer/index.mjs';
+import { parseURL, withoutBase, joinURL, withQuery, withLeadingSlash, withoutTrailingSlash, isRelative } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/ufo/dist/index.mjs';
+import destr from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/destr/dist/index.mjs';
+import { snakeCase, kebabCase, pascalCase, camelCase } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/scule/dist/index.mjs';
+import { createFetch as createFetch$1, Headers } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/ofetch/dist/node.mjs';
+import { createCall, createFetch } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/unenv/runtime/fetch/index.mjs';
+import { createHooks } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/hookable/dist/index.mjs';
+import { hash } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/ohash/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/unstorage/drivers/fs.mjs';
+import defu from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/defu/dist/defu.mjs';
+import { toRouteMatcher, createRouter } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/radix3/dist/index.mjs';
+import { GraphQLClient } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/graphql-request/dist/index.js';
+import { MeiliSearch } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/meilisearch/dist/bundles/meilisearch.cjs.js';
+import { extname, join } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/pathe/dist/index.mjs';
+import { unified } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/unified/index.js';
+import { toString } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/mdast-util-to-string/index.js';
+import { preprocess } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/micromark/dev/lib/preprocess.js';
+import { postprocess } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/micromark/dev/lib/postprocess.js';
+import { stringifyPosition } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/unist-util-stringify-position/index.js';
+import { markdownLineEnding, markdownSpace } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/micromark-util-character/dev/index.js';
+import { push, splice } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/micromark-util-chunked/dev/index.js';
+import { resolveAll } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/micromark-util-resolve-all/index.js';
+import remarkEmoji from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/remark-emoji/index.js';
+import rehypeSlug from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/rehype-slug/index.js';
+import remarkSqueezeParagraphs from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/remark-squeeze-paragraphs/index.js';
+import rehypeExternalLinks from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/rehype-external-links/index.js';
+import remarkGfm from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/remark-gfm/index.js';
+import rehypeSortAttributeValues from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/rehype-sort-attribute-values/index.js';
+import rehypeSortAttributes from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/rehype-sort-attributes/index.js';
+import rehypeRaw from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/rehype-raw/index.js';
+import remarkMDC, { parseFrontMatter } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/remark-mdc/dist/index.mjs';
+import remarkParse from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/remark-parse/index.js';
+import remark2rehype from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/remark-rehype/index.js';
+import { all } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/mdast-util-to-hast/index.js';
+import { detab } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/detab/index.js';
+import { u } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/unist-builder/index.js';
+import { encode } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/mdurl/index.js';
+import slugify from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/slugify/slugify.js';
+import { position } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/unist-util-position/index.js';
+import { visit } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/unist-util-visit/index.js';
+import { BUNDLED_LANGUAGES, BUNDLED_THEMES, getHighlighter } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/shiki-es/dist/shiki.node.mjs';
+import consola from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/unenv/runtime/npm/consola.mjs';
 
-const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"envPrefix":"NUXT_","routeRules":{"/__nuxt_error":{"cache":false}}},"public":{"content":{"locales":[],"defaultLocale":"","integrity":"","experimental":{"stripQueryParameters":false,"clientDB":false},"api":{"baseURL":"/api/_content"},"navigation":{"fields":[]},"tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"highlight":false,"wsUrl":"ws://localhost:4000/","documentDriven":false,"host":"","trailingSlash":false,"anchorLinks":{"depth":4,"exclude":[1]}},"meilisearchClient":{"hostUrl":"http://my-meilisearch-server.domain.com","searchApiKey":"<your_public_key>","serverSideUsage":true,"instantSearch":{"theme":"algolia"},"clientOptions":{"placeholderSearch":true,"paginationTotalHits":50,"finitePagination":true,"primaryKey":"","keepZeroFacets":false}}},"content":{"cacheVersion":2,"cacheIntegrity":"kc4UzpZUjI","transformers":[],"base":"","api":{"baseURL":"/api/_content"},"watch":{"ws":{"port":{"port":4000,"portRange":[4000,4040]},"hostname":"localhost","showURL":false}},"sources":{},"ignores":["\\.","-"],"locales":[],"defaultLocale":"","highlight":false,"markdown":{"tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"anchorLinks":{"depth":4,"exclude":[1]},"remarkPlugins":{},"rehypePlugins":{}},"yaml":{},"csv":{"delimeter":",","json":true},"navigation":{"fields":[]},"documentDriven":false,"experimental":{"clientDB":false,"stripQueryParameters":false}},"serverMeilisearchClient":{"hostUrl":"http://my-meilisearch-server.domain.com","searchApiKey":"<your_public_key>","adminApiKey":"<your_secret_key>","serverSideUsage":true,"instantSearch":{"theme":"algolia"},"clientOptions":{"placeholderSearch":true,"paginationTotalHits":50,"finitePagination":true,"primaryKey":"","keepZeroFacets":false}}};
+const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"envPrefix":"NUXT_","routeRules":{"/__nuxt_error":{"cache":false}}},"public":{"GQL_HOST":"http://127.0.0.1:4001","graphql-client":{"clients":{"default":{"token":{"type":"Bearer","name":"Authorization"},"proxyCookies":true,"tokenStorage":{"mode":"cookie","cookieOptions":{"maxAge":604800,"secure":false},"name":"gql:default"},"preferGETQueries":false,"host":"http://127.0.0.1:4001"}},"watch":true,"autoImport":true,"functionPrefix":"Gql","documentPaths":["./graphql/queries/"],"preferGETQueries":false},"content":{"locales":[],"defaultLocale":"","integrity":"","experimental":{"stripQueryParameters":false,"clientDB":false},"api":{"baseURL":"/api/_content"},"navigation":{"fields":[]},"tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"highlight":false,"wsUrl":"ws://localhost:4000/","documentDriven":false,"host":"","trailingSlash":false,"anchorLinks":{"depth":4,"exclude":[1]}},"meilisearchClient":{"hostUrl":"https://meeovicms.com:7700/","searchApiKey":"<your_public_key>","serverSideUsage":true,"instantSearch":{"theme":"algolia"},"clientOptions":{"placeholderSearch":true,"paginationTotalHits":50,"finitePagination":true,"primaryKey":"","keepZeroFacets":false}},"directus":{"url":"http://meeovicms.com:8010/","autoFetch":true,"fetchUserParams":"","token":""}},"graphql-client":{"clients":{}},"content":{"cacheVersion":2,"cacheIntegrity":"kc4UzpZUjI","transformers":[],"base":"","api":{"baseURL":"/api/_content"},"watch":{"ws":{"port":{"port":4000,"portRange":[4000,4040]},"hostname":"localhost","showURL":false}},"sources":{},"ignores":["\\.","-"],"locales":[],"defaultLocale":"","highlight":false,"markdown":{"tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"anchorLinks":{"depth":4,"exclude":[1]},"remarkPlugins":{},"rehypePlugins":{}},"yaml":{},"csv":{"delimeter":",","json":true},"navigation":{"fields":[]},"documentDriven":false,"experimental":{"clientDB":false,"stripQueryParameters":false}},"serverMeilisearchClient":{"hostUrl":"https://meeovicms.com:7700/","searchApiKey":"<your_public_key>","adminApiKey":"<your_secret_key>","serverSideUsage":true,"instantSearch":{"theme":"algolia"},"clientOptions":{"placeholderSearch":true,"paginationTotalHits":50,"finitePagination":true,"primaryKey":"","keepZeroFacets":false}}};
 const ENV_PREFIX = "NITRO_";
 const ENV_PREFIX_ALT = _runtimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_";
 const getEnv = (key) => {
@@ -78,8 +79,8 @@ function overrideConfig(obj, parentKey = "") {
   }
 }
 overrideConfig(_runtimeConfig);
-const config$1 = deepFreeze(_runtimeConfig);
-const useRuntimeConfig = () => config$1;
+const config$2 = deepFreeze(_runtimeConfig);
+const useRuntimeConfig = () => config$2;
 function deepFreeze(object) {
   const propNames = Object.getOwnPropertyNames(object);
   for (const name of propNames) {
@@ -91,7 +92,7 @@ function deepFreeze(object) {
   return Object.freeze(object);
 }
 
-const serverAssets = [{"baseName":"server","dir":"C:/Users/Basti/OneDrive/Documents/My Websites/Handmade Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"C:/Users/Basti/OneDrive/Documents/My Websites/Handmade Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/server/assets"}];
 
 const assets = createStorage();
 
@@ -105,12 +106,12 @@ const useStorage = () => storage;
 
 storage.mount('/assets', assets);
 
-storage.mount('content:source:content', unstorage_47drivers_47fs({"name":"content:source:content","driver":"fs","base":"C:\\Users\\Basti\\OneDrive\\Documents\\My Websites\\Handmade Sites\\Javascript-Projects\\Nuxt-Projects\\Applications\\AlternateCMS-Framework\\TheMeeoviCompany-Sites\\pixanomy-frontend\\content","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache:content', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\Basti\\OneDrive\\Documents\\My Websites\\Handmade Sites\\Javascript-Projects\\Nuxt-Projects\\Applications\\AlternateCMS-Framework\\TheMeeoviCompany-Sites\\pixanomy-frontend\\.nuxt\\content-cache","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:\\Users\\Basti\\OneDrive\\Documents\\My Websites\\Handmade Sites\\Javascript-Projects\\Nuxt-Projects\\Applications\\AlternateCMS-Framework\\TheMeeoviCompany-Sites\\pixanomy-frontend","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:\\Users\\Basti\\OneDrive\\Documents\\My Websites\\Handmade Sites\\Javascript-Projects\\Nuxt-Projects\\Applications\\AlternateCMS-Framework\\TheMeeoviCompany-Sites\\pixanomy-frontend\\server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:\\Users\\Basti\\OneDrive\\Documents\\My Websites\\Handmade Sites\\Javascript-Projects\\Nuxt-Projects\\Applications\\AlternateCMS-Framework\\TheMeeoviCompany-Sites\\pixanomy-frontend\\.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:\\Users\\Basti\\OneDrive\\Documents\\My Websites\\Handmade Sites\\Javascript-Projects\\Nuxt-Projects\\Applications\\AlternateCMS-Framework\\TheMeeoviCompany-Sites\\pixanomy-frontend\\.nuxt\\cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('content:source:content', unstorage_47drivers_47fs({"name":"content:source:content","driver":"fs","base":"C:\\Users\\Basti\\OneDrive\\Documents\\My Websites\\Handmade Sites\\Javascript-Projects\\Nuxt-Projects\\AlternateCMS-Framework\\PixanomyCompany-Sites\\pixanomy-frontend\\content","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache:content', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\Basti\\OneDrive\\Documents\\My Websites\\Handmade Sites\\Javascript-Projects\\Nuxt-Projects\\AlternateCMS-Framework\\PixanomyCompany-Sites\\pixanomy-frontend\\.nuxt\\content-cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:\\Users\\Basti\\OneDrive\\Documents\\My Websites\\Handmade Sites\\Javascript-Projects\\Nuxt-Projects\\AlternateCMS-Framework\\PixanomyCompany-Sites\\pixanomy-frontend","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:\\Users\\Basti\\OneDrive\\Documents\\My Websites\\Handmade Sites\\Javascript-Projects\\Nuxt-Projects\\AlternateCMS-Framework\\PixanomyCompany-Sites\\pixanomy-frontend\\server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:\\Users\\Basti\\OneDrive\\Documents\\My Websites\\Handmade Sites\\Javascript-Projects\\Nuxt-Projects\\AlternateCMS-Framework\\PixanomyCompany-Sites\\pixanomy-frontend\\.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:\\Users\\Basti\\OneDrive\\Documents\\My Websites\\Handmade Sites\\Javascript-Projects\\Nuxt-Projects\\AlternateCMS-Framework\\PixanomyCompany-Sites\\pixanomy-frontend\\.nuxt\\cache","ignore":["**/node_modules/**","**/.git/**"]}));
 
 const defaultCacheOptions = {
   name: "_",
@@ -346,9 +347,9 @@ function cloneWithProxy(obj, overrides) {
 }
 const cachedEventHandler = defineCachedEventHandler;
 
-const config = useRuntimeConfig();
+const config$1 = useRuntimeConfig();
 const _routeRulesMatcher = toRouteMatcher(
-  createRouter({ routes: config.nitro.routeRules })
+  createRouter({ routes: config$1.nitro.routeRules })
 );
 function createRouteRulesHandler() {
   return eventHandler((event) => {
@@ -394,9 +395,9 @@ function getRouteRulesForPath(path) {
   return defu({}, ..._routeRulesMatcher.matchAll(path).reverse());
 }
 
-const plugins = [
-  
-];
+function defineNitroPlugin(def) {
+  return def;
+}
 
 function defineRenderHandler(handler) {
   return eventHandler(async (event) => {
@@ -433,6 +434,34 @@ function defineRenderHandler(handler) {
     return typeof response.body === "string" ? response.body : JSON.stringify(response.body);
   });
 }
+
+const config = {"default":{"token":{"type":"Bearer","name":"Authorization"},"proxyCookies":true,"tokenStorage":{"mode":"cookie","cookieOptions":{"maxAge":604800,"secure":false},"name":"gql:default"},"preferGETQueries":false,"host":"http://127.0.0.1:4001"}};
+const clients = {};
+
+const GqlNitro = { clients, config };
+
+const _ihdrAylO08 = defineNitroPlugin(() => {
+  const GqlConfig = GqlNitro.config;
+  for (const [client, conf] of Object.entries(GqlConfig)) {
+    const serverHeaders = typeof conf?.headers?.serverOnly === "object" && conf?.headers?.serverOnly || void 0;
+    if (conf?.headers?.serverOnly) {
+      delete conf.headers.serverOnly;
+    }
+    const tokenName = conf.token.name;
+    const tokenType = conf.token.type;
+    const authToken = !tokenType ? conf?.token?.value : `${tokenType} ${conf?.token?.value}`;
+    const headers = {
+      ...conf?.headers,
+      ...serverHeaders,
+      ...conf?.token?.value && { [tokenName]: authToken }
+    };
+    GqlNitro.clients[client] = new GraphQLClient(conf.host, { headers });
+  }
+});
+
+const plugins = [
+  _ihdrAylO08
+];
 
 function hasReqHeader(event, name, includes) {
   const value = getRequestHeader(event, name);
@@ -526,7 +555,7 @@ function publicAssetsURL(...path) {
 
 const useConfig = () => useRuntimeConfig().serverMeilisearchClient;
 
-const _QrhG10 = defineEventHandler(async (event) => {
+const _YIpD3R = defineEventHandler(async (event) => {
   const { hostUrl, adminApiKey } = useConfig();
   if (!event.context.serverMeilisearchClient) {
     event.context.serverMeilisearchClient = new MeiliSearch({
@@ -3158,7 +3187,7 @@ const json = defineTransformer({
     let parsed;
     if (typeof content === "string") {
       if (_id.endsWith("json5")) {
-        parsed = (await import('file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/node_modules/json5/lib/index.js').then((m) => m.default || m)).parse(content);
+        parsed = (await import('file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/node_modules/json5/lib/index.js').then((m) => m.default || m)).parse(content);
       } else if (_id.endsWith("json")) {
         parsed = destr(content);
       }
@@ -3484,7 +3513,7 @@ const getContentQuery = (event) => {
   return query;
 };
 
-const _Xg0ITx = defineEventHandler(async (event) => {
+const _LFmnLM = defineEventHandler(async (event) => {
   const query = getContentQuery(event);
   if (query.first) {
     const content = await serverQueryContent(event, query).findOne();
@@ -3515,7 +3544,7 @@ const _Xg0ITx = defineEventHandler(async (event) => {
   return contents;
 });
 
-const _8f3UMb = defineEventHandler(async (event) => {
+const _cAgdR1 = defineEventHandler(async (event) => {
   const { content } = useRuntimeConfig();
   const now = Date.now();
   const contents = await serverQueryContent(event).find();
@@ -3617,7 +3646,7 @@ function isObject(obj) {
   return Object.prototype.toString.call(obj) === "[object Object]";
 }
 
-const _h7vz7S = defineEventHandler(async (event) => {
+const _nLLNoI = defineEventHandler(async (event) => {
   const query = getContentQuery(event);
   if (!isPreview(event) && Object.keys(query).length === 0) {
     const cache = await cacheStorage.getItem("content-navigation.json");
@@ -3654,19 +3683,19 @@ const _h7vz7S = defineEventHandler(async (event) => {
   return createNav(contents, configs);
 });
 
-const _lazy_KmpGxW = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_riFjoM = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '/__nuxt_error', handler: _lazy_KmpGxW, lazy: true, middleware: false, method: undefined },
-  { route: '', handler: _QrhG10, lazy: false, middleware: false, method: undefined },
-  { route: '/api/_content/query/:qid/**:params', handler: _Xg0ITx, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/query/:qid', handler: _Xg0ITx, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/query', handler: _Xg0ITx, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/cache.json', handler: _8f3UMb, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation/:qid/**:params', handler: _h7vz7S, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation/:qid', handler: _h7vz7S, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation', handler: _h7vz7S, lazy: false, middleware: false, method: "get" },
-  { route: '/**', handler: _lazy_KmpGxW, lazy: true, middleware: false, method: undefined }
+  { route: '/__nuxt_error', handler: _lazy_riFjoM, lazy: true, middleware: false, method: undefined },
+  { route: '', handler: _YIpD3R, lazy: false, middleware: false, method: undefined },
+  { route: '/api/_content/query/:qid/**:params', handler: _LFmnLM, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/query/:qid', handler: _LFmnLM, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/query', handler: _LFmnLM, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/cache.json', handler: _cAgdR1, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation/:qid/**:params', handler: _nLLNoI, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation/:qid', handler: _nLLNoI, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation', handler: _nLLNoI, lazy: false, middleware: false, method: "get" },
+  { route: '/**', handler: _lazy_riFjoM, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
@@ -3798,9 +3827,9 @@ const appRootTag = "div";
 
 globalThis.__buildAssetsURL = buildAssetsURL;
 globalThis.__publicAssetsURL = publicAssetsURL;
-const getClientManifest = () => import('file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getClientManifest = () => import('file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
 const getStaticRenderedHead = () => Promise.resolve().then(function () { return _virtual__headStatic$1; }).then((r) => r.default || r);
-const getServerEntry = () => import('file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/TheMeeoviCompany-Sites/pixanomy-frontend/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getServerEntry = () => import('file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/PixanomyCompany-Sites/pixanomy-frontend/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
 const getSSRRenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();
   if (!manifest) {
@@ -3982,7 +4011,7 @@ const renderer$1 = /*#__PURE__*/Object.freeze({
   default: renderer
 });
 
-const _virtual__headStatic = {"headTags":"<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">","bodyTags":"","bodyTagsOpen":"","htmlAttrs":"","bodyAttrs":""};
+const _virtual__headStatic = {"headTags":"<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<script src=\"http://meeovicms.com:3005/umami.js\" async=\"\" data-website-id=\"9a8a7670-87e9-4e7b-88a9-b2d28ca03075\"></script>","bodyTags":"","bodyTagsOpen":"","htmlAttrs":"","bodyAttrs":""};
 
 const _virtual__headStatic$1 = /*#__PURE__*/Object.freeze({
   __proto__: null,

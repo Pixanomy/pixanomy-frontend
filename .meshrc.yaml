@@ -1,0 +1,5 @@
+sources:
+  - name: MainDB
+    handler:
+      postgraphile:
+        connectionString: postgres://{env.DB_USER}:{env.DB_PASSWORD}@{env.DB_HOST}/{env.DB_USER}?schema={env.DB_SCHEMA}

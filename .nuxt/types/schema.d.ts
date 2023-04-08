@@ -1,13 +1,14 @@
 import { NuxtModule } from '@nuxt/schema'
 declare module '@nuxt/schema' {
   interface NuxtConfig {
-    ["apollo"]?: typeof import("@nuxtjs/apollo").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["graphql-client"]?: typeof import("nuxt-graphql-client").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["content"]?: typeof import("@nuxt/content").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["meilisearch"]?: typeof import("nuxt-meilisearch").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["directus"]?: typeof import("nuxt-directus").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["devtools"]?: typeof import("C:/Users/Basti/AppData/Roaming/npm/node_modules/@nuxt/devtools/module").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["nuxt-config-schema"]?: typeof import("nuxt-config-schema").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["telemetry"]?: typeof import("@nuxt/telemetry").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    modules?: (NuxtModule | string | [NuxtModule | string, Record<string, any>] | ["@nuxtjs/apollo", NuxtConfig["apollo"]] | ["@nuxt/content", NuxtConfig["content"]] | ["nuxt-meilisearch", NuxtConfig["meilisearch"]] | ["C:/Users/Basti/AppData/Roaming/npm/node_modules/@nuxt/devtools/module", NuxtConfig["devtools"]] | ["nuxt-config-schema", NuxtConfig["nuxt-config-schema"]] | ["@nuxt/telemetry", NuxtConfig["telemetry"]])[],
+    modules?: (NuxtModule | string | [NuxtModule | string, Record<string, any>] | ["nuxt-graphql-client", NuxtConfig["graphql-client"]] | ["@nuxt/content", NuxtConfig["content"]] | ["nuxt-meilisearch", NuxtConfig["meilisearch"]] | ["nuxt-directus", NuxtConfig["directus"]] | ["C:/Users/Basti/AppData/Roaming/npm/node_modules/@nuxt/devtools/module", NuxtConfig["devtools"]] | ["nuxt-config-schema", NuxtConfig["nuxt-config-schema"]] | ["@nuxt/telemetry", NuxtConfig["telemetry"]])[],
   }
   interface RuntimeConfig {
    app: {
@@ -16,6 +17,10 @@ declare module '@nuxt/schema' {
       buildAssetsDir: string,
 
       cdnURL: string,
+   },
+
+   "graphql-client": {
+      clients: any,
    },
 
    content: {
@@ -165,6 +170,48 @@ declare module '@nuxt/schema' {
    },
   }
   interface PublicRuntimeConfig {
+   GQL_HOST: string,
+
+   "graphql-client": {
+      clients: {
+         default: {
+            token: {
+               type: string,
+
+               name: string,
+            },
+
+            proxyCookies: boolean,
+
+            tokenStorage: {
+               mode: string,
+
+               cookieOptions: {
+                  maxAge: number,
+
+                  secure: boolean,
+               },
+
+               name: string,
+            },
+
+            preferGETQueries: boolean,
+
+            host: string,
+         },
+      },
+
+      watch: boolean,
+
+      autoImport: boolean,
+
+      functionPrefix: string,
+
+      documentPaths: Array<string>,
+
+      preferGETQueries: boolean,
+   },
+
    content: {
       locales: Array<any>,
 
@@ -275,6 +322,16 @@ declare module '@nuxt/schema' {
 
          keepZeroFacets: boolean,
       },
+   },
+
+   directus: {
+      url: string,
+
+      autoFetch: boolean,
+
+      fetchUserParams: any,
+
+      token: any,
    },
   }
 }

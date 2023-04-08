@@ -1,139 +1,159 @@
 <template>
-	<div>
-		<!-- ========================= SECTION CONTENT ========================= -->
-		<section class="section-content padding-y">
-			<div class="container">
+	<div class="cartPage">
+		<form action="">
+			<v-row>
+				<v-col cols="8">
+					<v-row>
+						<v-col cols="12">
+							<v-card min-width="500px" style="padding-left: 15px; padding-bottom: 15px;">
+								<v-toolbar color="transparent" density="compact" title="Items (2 Items)">
+									<v-btn prepend-icon="fas fa-trash">Remove All</v-btn>
+								</v-toolbar>
+								<v-table fixed-header>
+									<thead>
+										<tr>
+											<th class="text-left">
+												Image
+											</th>
+											<th class="text-left">
+												Product Name
+											</th>
+											<th class="text-left">
+												Price
+											</th>
+											<th class="text-left">
+												Color
+											</th>
+											<th class="text-left">
+												Size
+											</th>
+											<th class="text-left">
+												Quantity
+											</th>
+											<th class="text-left">
+												Action
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<v-avatar image="https://cdn.vuetifyjs.com/images/john.jpg" rounded="0"
+													size="70"></v-avatar>
+											</td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td>
+												<v-text-field type="number" label="Quantity" hide-details="auto">
+												</v-text-field>
+											</td>
+											<td>
+												<v-btn icon="fas fa-xmark" size="x-small"></v-btn>
+											</td>
+										</tr>
+									</tbody>
+								</v-table>
+							</v-card>
+						</v-col>
 
-				<div class="row">
-					<main class="col-md-9">
-						<div class="card">
+						<v-col cols="12">
+							<v-text-field clearable label="Add Coupon"></v-text-field>
+						</v-col>
 
-							<table class="table table-borderless table-shopping-cart">
-								<thead class="text-muted">
-									<tr class="small text-uppercase">
-										<th scope="col">Product</th>
-										<th scope="col" width="120">Quantity</th>
-										<th scope="col" width="120">Price</th>
-										<th scope="col" class="text-right" width="200"> </th>
-									</tr>
-								</thead>
-								<tbody>
+						<v-col cols="12">
+							<v-card style="padding-left: 15px; padding-bottom: 15px;">
+								<v-tabs v-model="tab" bg-color="transparent">
+									<v-tab value="one">Billing Address</v-tab>
+									<v-tab value="two">Shipping Address</v-tab>
+								</v-tabs>
+
+								<v-card-text>
+									<v-window v-model="tab">
+										<v-window-item value="one">
+											<billingaddress />
+										</v-window-item>
+
+										<v-window-item value="two">
+											<shippingaddress />
+										</v-window-item>
+									</v-window>
+								</v-card-text>
+							</v-card>
+						</v-col>
+					</v-row>
+				</v-col>
+
+				<v-col cols="4">
+					<v-row>
+						<v-card min-width="500px" style="padding-left: 15px; padding-bottom: 15px;">
+							<v-col cols="12">
+								<v-toolbar color="transparent" density="compact" title="Order Summary"></v-toolbar>
+								<v-table fixed-header>
 									<tr>
-										<td>
-											<figure class="itemside">
-												<div class="aside"><img src="../../assets/commerce/images/items/1.jpg"
-														class="img-sm"></div>
-												<figcaption class="info">
-													<a href="#" class="title text-dark">Some name of item goes here
-														nice</a>
-													<p class="text-muted small">Size: XL, Color: blue, <br> Brand: Gucci
-													</p>
-												</figcaption>
-											</figure>
-										</td>
-										<td>
-											<select class="form-control">
-												<option>1</option>
-												<option>2</option>
-												<option>3</option>
-												<option>4</option>
-											</select>
-										</td>
-										<td>
-											<div class="price-wrap">
-												<var class="price">$1156.00</var>
-												<small class="text-muted"> $315.20 each </small>
-											</div> <!-- price-wrap .// -->
-										</td>
-										<td class="text-right"><v-btn icon="fas fa-heart" size="x-small" color="pink" title="Save to Wish List"></v-btn></td>
-										<td class="text-right"><v-btn icon="fas fa-minus" size="x-small" title="Remove from Cart"></v-btn></td>
+										<th>Subtotal</th>
+										<td>$ </td>
 									</tr>
-								</tbody>
-							</table>
+									<v-divider></v-divider>
+									<tr>
+										<th>Discount</th>
+										<td>- ( $ )</td>
+									</tr>
+									<v-divider></v-divider>
+									<tr>
+										<th>Shipping</th>
+										<td></td>
+									</tr>
+									<v-divider></v-divider>
+									<tr>
+										<th>
+											<h5 style="color: orange;">Total Price</h5>
+										</th>
+										<td>$ </td>
+									</tr>
+								</v-table>
+							</v-col>
 
-							<div class="card-body border-top">
-								<a href="#" class="btn btn-primary float-md-right"> Make Purchase <i
-										class="fa fa-chevron-right"></i> </a>
-								<a href="/" class="btn btn-light"> <i class="fa fa-chevron-left"></i> Continue shopping
-								</a>
-							</div>
-						</div> <!-- card.// -->
+							<v-col cols="12">
+								<v-toolbar color="transparent" density="compact" title="Checkout"></v-toolbar>
 
-						<div class="alert alert-success mt-3">
-							<p class="icontext"><i class="icon text-success fa fa-truck"></i> Free Delivery within 1-2
-								weeks</p>
-						</div>
+								<v-row>
+									<v-col cols="12">
+										<v-text-field label="Cardholder Name"></v-text-field>
+									</v-col>
+									<v-col cols="12">
+										<v-text-field type="number" label="Card Number"></v-text-field>
+									</v-col>
+									<v-col cols="6">
+										<v-text-field type="date" label="Expiration Date"></v-text-field>
+									</v-col>
+									<v-col cols="6">
+										<v-text-field type="number" label="CVC"></v-text-field>
+									</v-col>
+									<v-col cols="12">
+										<v-btn width="100%" color="orange">Pay Now</v-btn>
+									</v-col>
+								</v-row>
 
-					</main> <!-- col.// -->
-					<aside class="col-md-3">
-						<div class="card mb-3">
-							<div class="card-body">
-								<form>
-									<div class="form-group">
-										<label>Have coupon?</label>
-										<div class="input-group">
-											<input type="text" class="form-control" name="" placeholder="Coupon code">
-											<span class="input-group-append">
-												<button class="btn btn-primary">Apply</button>
-											</span>
-										</div>
-									</div>
-								</form>
-							</div> <!-- card-body.// -->
-						</div> <!-- card .// -->
-						<div class="card">
-							<div class="card-body">
-								<dl class="dlist-align">
-									<dt>Total price:</dt>
-									<dd class="text-right">USD 568</dd>
-								</dl>
-								<dl class="dlist-align">
-									<dt>Discount:</dt>
-									<dd class="text-right">USD 658</dd>
-								</dl>
-								<dl class="dlist-align">
-									<dt>Total:</dt>
-									<dd class="text-right  h5"><strong>$1,650</strong></dd>
-								</dl>
-								<hr>
-								<p class="text-center mb-3">
-									<img src="../../assets/commerce/images/misc/payments.png" height="26">
-								</p>
-
-							</div> <!-- card-body.// -->
-						</div> <!-- card .// -->
-					</aside> <!-- col.// -->
-				</div>
-
-			</div> <!-- container .//  -->
-		</section>
-		<!-- ========================= SECTION CONTENT END// ========================= -->
-
-		<!-- ========================= SECTION  ========================= -->
-		<section class="section-name border-top padding-y">
-			<div class="container">
-				<h6>Payment and refund policy</h6>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-			</div><!-- container // -->
-		</section>
+							</v-col>
+						</v-card>
+					</v-row>
+				</v-col>
+			</v-row>
+		</form>
 	</div>
 </template>
 
 <script>
-	export default {
+	import billingaddress from '../../components/Commerce/billingaddress.vue'
+	import shippingaddress from '../../components/Commerce/shippingaddress.vue'
 
+	export default {
+		components: {
+			billingaddress,
+			shippingaddress
+		}
 	}
 </script>
 

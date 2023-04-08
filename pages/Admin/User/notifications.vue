@@ -1,4 +1,6 @@
 <template>
+    <div>
+        <profilebar />
     <v-table fixed-header height="300px">
         <thead>
             <tr>
@@ -17,55 +19,17 @@
             </tr>
         </tbody>
     </v-table>
+   </div> 
 </template>
 
 <script>
+import profilebar from '../../../components/Menus/profilebar.vue'
+
     export default {
-        data() {
-            return {
-                desserts: [{
-                        name: 'Frozen Yogurt',
-                        Notifications: 159,
-                    },
-                    {
-                        name: 'Ice cream sandwich',
-                        Notifications: 237,
-                    },
-                    {
-                        name: 'Eclair',
-                        Notifications: 262,
-                    },
-                    {
-                        name: 'Cupcake',
-                        Notifications: 305,
-                    },
-                    {
-                        name: 'Gingerbread',
-                        Notifications: 356,
-                    },
-                    {
-                        name: 'Jelly bean',
-                        Notifications: 375,
-                    },
-                    {
-                        name: 'Lollipop',
-                        Notifications: 392,
-                    },
-                    {
-                        name: 'Honeycomb',
-                        Notifications: 408,
-                    },
-                    {
-                        name: 'Donut',
-                        Notifications: 452,
-                    },
-                    {
-                        name: 'KitKat',
-                        Notifications: 518,
-                    },
-                ],
-            }
-        },
+        components: { profilebar },
+        data: () => ({
+            tab: null,
+        }),
     }
 </script>
 

@@ -1,227 +1,131 @@
 <template>
-    <div>
-      <section data-bs-version="5.1" class="pricing1 cid-twaUcnOkam" id="pricing1-4h">
-    
+    <div class="productPage">
+        <v-row>
+            <v-col cols="8">
+                <v-card>
+                    <v-carousel show-arrows="hover" hide-delimiters>
+                        <v-carousel-item src="https://cdn.vuetifyjs.com/images/cards/docks.jpg" cover></v-carousel-item>
 
-    
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <img src="../../assets/images/image12.jpg" class="top" alt="">
-            </div>
-            <div class="col-12 col-md-6">
-                <div class="right">
-                    <div class="card">
-                        <p class="desc1 bord mbr-fonts-style display-4">
-                            SALE</p>
-                    </div>
-                    <p class="name mbr-fonts-style display-2"><strong>Diamond Ring</strong></p>
+                        <v-carousel-item src="https://cdn.vuetifyjs.com/images/cards/hotel.jpg" cover></v-carousel-item>
 
-                    <div class="price-line">
-                        <p class="desc2 mbr-fonts-style display-5"><s>$145.00</s></p>
-                        <p class="plus1 mbr-fonts-style display-5">
-                            <strong>&nbsp;</strong>$135.00</p>
-                    </div>
-                    <p class="mbr-text mbr-fonts-style display-4">Dicta sunt explicabo. Nemo enim
-                        ipsam voluptatem
-                        voluptas sit odit aut fugit, sed quia consequuntur. Lorem ipsum nonum eirmod dolor.
-                        <br>
-                        <br>Aquia sit amet, elitr, sed diam nonum eirmod tempor invidunt labore et dolore magna
-                        aliquyam.erat, sed diam voluptua. At vero accusam et justo duo dolores et ea rebum. Stet clitain
-                        vidunt ut labore eirmod tempor invidunt magna aliquyam. Stet clitain vidunt ut labore.</p>
-                    <div class="mbr-section-btn"><a class="btn btn-secondary display-7" href="">Buy Now</a></div>
-                    <div class="price-line1">
-                        <p class="desc mbr-fonts-style display-7"><strong>
-                                Category:</strong></p>
-                        <p class="plus mbr-fonts-style display-4">
-                            &nbsp;Rings</p>
-                    </div>
-                    <div class="price-line1">
-                        <p class="desc mbr-fonts-style display-7"><strong>
-                                Tags:</strong>&nbsp;</p>
-                        <p class="plus mbr-fonts-style display-4">ring</p>
-                    </div>
-                    <div class="price-line1">
-                        <p class="desc mbr-fonts-style display-7"><strong>
-                                Product ID:</strong></p>
-                        <p class="plus mbr-fonts-style display-4">2234</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+                        <v-carousel-item src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" cover>
+                        </v-carousel-item>
+                    </v-carousel>
+                </v-card>
 
-<section data-bs-version="5.1" class="features14 algom5 cid-twaUYmbT4E" id="afeatures14-4i">
+                <v-row>
+                    <v-col cols="8">
+                        <v-btn prepend-icon="fas fa-star" variant="plain" title="Add to Favorites">Add to Favorites
+                        </v-btn>
+                    </v-col>
 
-    
+                    <v-col cols="4">
+                        <v-btn prepend-icon="fas fa-download" variant="plain" title="Download"></v-btn>
+                        <v-btn prepend-icon="fas fa-share" variant="plain" title="Share on social"></v-btn>
+                        <v-btn prepend-icon="fas fa-flag" variant="plain" title="Report"></v-btn>
+                    </v-col>
 
-    
-    
+                    <v-spacer></v-spacer>
+                    <v-col cols="12">
+                        <v-card class="mx-auto" title="Creator Name" subtitle="Published"
+                            text="This is content description" variant="plain"
+                            prepend-avatar="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"></v-card>
+                    </v-col>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-12 p-0 main-col">
-                <div class="content-container">
-                    <div class="col-12 text-container">
-                        <div class="iconfont-wrapper">
-                            <span class="mbr-iconfont mobi-mbri-photos mobi-mbri"></span>
-                        </div>
-                        <div class="text-wrap">
-                            <h1 class="mbr-section-title align-center mbr-fonts-style display-2">
-                                Our shared mission.
-                            </h1>
-                            <p class="mbr-text align-center mbr-fonts-style display-4">
-                                Neque convallis a cras semper auctor neque. Mi tempus imperdiet nulla malesuada
-                                pellentesque elit eget gravida cum. Interdum varius sit amet mattis vulputate enim nulla.
-                                Sapien pellentesque habitant morbi tristique.
-                            </p>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+                    <v-col cols="3">
+                        <v-btn variant="plain" prepend-icon="fas fa-star">
+                            783 Favorites
+                            <v-menu activator="parent">
+                                <v-list>
+                                    <v-list-item v-for="(item, index) in items" :key="index" :value="index">
+                                        <v-list-item-title>{{ item.title }}</v-list-item-title>
+                                    </v-list-item>
+                                </v-list>
+                            </v-menu>
+                        </v-btn>
+                    </v-col>
 
-<section data-bs-version="5.1" class="pricing1 lodgem5 cid-twaVk5oC96" id="apricing1-4j">
-    
+                    <v-col cols="3">
+                        <v-btn variant="plain" prepend-icon="fas fa-comments">
+                            90 Comments
+                            <v-menu activator="parent">
+                                <v-list>
+                                    <v-list-item v-for="(item, index) in items" :key="index" :value="index">
+                                        <v-list-item-title>{{ item.title }}</v-list-item-title>
+                                    </v-list-item>
+                                </v-list>
+                            </v-menu>
+                        </v-btn>
+                    </v-col>
 
-    
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="mbr-section-head">
-                    <h3 class="mbr-section-title mbr-fonts-style mb-0 display-5">
-                        Specifications</h3>
-                    
-                </div>
-                <div class="tabl-container">
-                    <div class="tabl-item-row">
-                        <div class="tabl-item-column">
-                            <p class="card-title mbr-fonts-style mb-0 display-7"></p>
-                        </div>
-                        <div class="tabl-item-column">
-                            <p class="card-title mbr-fonts-style mb-0 display-7">
-                                <strong>House and Gardens</strong>
-                            </p>
-                        </div>
-                        <div class="tabl-item-column">
-                            <p class="card-title mbr-fonts-style mb-0 display-7">
-                                <strong>Gardens Only</strong>
-                            </p>
-                        </div>
-                    </div>
+                    <v-col cols="3">
+                        <v-btn variant="plain" prepend-icon="fas fa-eye">
+                            61.7K Views
+                            <v-menu activator="parent">
+                                <v-list>
+                                    <v-list-item v-for="(item, index) in items" :key="index" :value="index">
+                                        <v-list-item-title>{{ item.title }}</v-list-item-title>
+                                    </v-list-item>
+                                </v-list>
+                            </v-menu>
+                        </v-btn>
+                    </v-col>
 
-                    <div class="tabl-item-row">
-                        <div class="tabl-item-column">
-                            <p class="card-text mbr-fonts-style mb-0 display-7">
-                                Children (5-16 years)
-                            </p>
-                        </div>
-                        <div class="tabl-item-column">
-                            <p class="card-text mbr-fonts-style mb-0 display-7">
-                                £6.00
-                            </p>
-                        </div>
-                        <div class="tabl-item-column">
-                            <p class="card-text mbr-fonts-style mb-0 display-7">
-                                £3.00
-                            </p>
-                        </div>
-                    </div>
+                    <v-col cols="12">
+                        <v-form action="" ref="form" v-model="form">
+                            <v-textarea v-model="comment" clearable label="Leave A Comment"
+                                prepend-icon="fas fa-comments" variant="outlined"></v-textarea>
+                            <v-card-actions>
+                                <v-btn variant="text" @click="$refs.form.reset()">
+                                    Clear
+                                </v-btn>
+                                <v-spacer></v-spacer>
+                                <v-btn :loading="isLoading" color="green">
+                                    Submit
+                                </v-btn>
+                            </v-card-actions>
+                        </v-form>
+                    </v-col>
 
-                    <div class="tabl-item-row">
-                        <div class="tabl-item-column">
-                            <p class="card-text mbr-fonts-style mb-0 display-7">
-                                Primary School Parties
-                            </p>
-                        </div>
-                        <div class="tabl-item-column">
-                            <p class="card-text mbr-fonts-style mb-0 display-7">
-                                £4.50
-                            </p>
-                        </div>
-                        <div class="tabl-item-column">
-                            <p class="card-text mbr-fonts-style mb-0 display-7">
-                                £4.00
-                            </p>
-                        </div>
-                    </div>
-                    <div class="tabl-item-row">
-                        <div class="tabl-item-column">
-                            <p class="card-text mbr-fonts-style mb-0 display-7">
-                                Secondary School Parties
-                            </p>
-                        </div>
-                        <div class="tabl-item-column">
-                            <p class="card-text mbr-fonts-style mb-0 display-7">
-                                £8.70
-                            </p>
-                        </div>
-                        <div class="tabl-item-column">
-                            <p class="card-text mbr-fonts-style mb-0 display-7">
-                                £5.90
-                            </p>
-                        </div>
-                    </div>
-                    <div class="tabl-item-row">
-                        <div class="tabl-item-column">
-                            <p class="card-text mbr-fonts-style mb-0 display-7">
-                                Mobility Scooter Hire
-                            </p>
-                        </div>
-                        <div class="tabl-item-column">
-                            <p class="card-text mbr-fonts-style mb-0 display-7">
-                                -
-                            </p>
-                        </div>
-                        <div class="tabl-item-column">
-                            <p class="card-text mbr-fonts-style mb-0 display-7">
-                                £4.60
-                            </p>
-                        </div>
-                    </div>
-                    <div class="tabl-item-row">
-                        <div class="tabl-item-column">
-                            <p class="card-text mbr-fonts-style mb-0 display-7">
-                                Adults/Senior Citizens/Students
-                            </p>
-                        </div>
-                        <div class="tabl-item-column">
-                            <p class="card-text mbr-fonts-style mb-0 display-7">
-                                £14.25
-                            </p>
-                        </div>
-                        <div class="tabl-item-column">
-                            <p class="card-text mbr-fonts-style mb-0 display-7">
-                                £6.5
-                            </p>
-                        </div>
-                    </div>
+                    <v-col cols="12">
+                        <v-list lines="one" variant="tonal">
+                            <v-list-item title="Comment Title" subtitle="Comment Date"
+                                prepend-avatar="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg">
+                                comment description
+                            </v-list-item>
+                        </v-list>
+                    </v-col>
+                </v-row>
+            </v-col>
 
-                    
-                    
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+            <v-col cols="4">
+                <relatedsidebar />
+            </v-col>
+        </v-row>
         <relatedproducts />
     </div>
 </template>
 
 <script>
     import relatedproducts from '../../components/Related/relatedproducts.vue'
+    import relatedsidebar from '../../components/Product/relatedsidebar.vue'
 
     export default {
         components: {
-            relatedproducts
+            relatedproducts,
+            relatedsidebar
         },
+        data: () => ({
+            form: false,
+            isLoading: false,
+            rules: {
+                email: v => !!(v || '').match(/@/) || 'Please enter a valid email',
+                length: len => v => (v || '').length >= len || `Invalid character length, required ${len}`,
+                password: v => !!(v || '').match(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*(_|[^\w])).+$/) ||
+                    'Password must contain an upper case letter, a numeric character, and a special character',
+                required: v => !!v || 'This field is required',
+            },
+        }),
     }
 </script>
 

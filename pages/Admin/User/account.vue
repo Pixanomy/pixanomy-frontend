@@ -1,5 +1,6 @@
 <template>
     <div>
+        <profilebar />
         <form method="post" @v-on:submit.prevent="addAccessToken()">
             <v-row>
                 <v-col cols="12">
@@ -31,9 +32,10 @@
 <script>
     /* 
     import gql from "graphql-tag";
-    import findManyUsers from "~/graphql/query/findManyUsers";
+    import findManyUsers from "~/graphql/query/findManyUsers"; */
+    import profilebar from '../../../components/Menus/profilebar.vue'
     // import  tax from '~/graphql/query/findManyTax'
-
+/*
     const ADD_USER = gql `
     mutation ($email: Sv-col ing!){
     createOneUsers(data: {email: $email}) {
@@ -41,7 +43,9 @@
   }
 }`;*/
 
+
     export default {
+        components: { profilebar },
         /*      data() {
                   return {
                       email: " ",

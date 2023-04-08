@@ -1,15 +1,42 @@
 <template>
-    <v-footer class="bg-orange-lighten-1 text-center d-flex flex-column">
-        <v-row align-content="center">
-            <v-col cols="12">
-                <h4>The Meeovi Company</h4>
-            </v-col>
-            <v-col cols="3">
-                <v-list-item title="Meeovi" subtitle="" value="" href="https://www.meeovi.com"></v-list-item>
-            </v-col>
-            <v-col class="text-center mt-4" cols="12">
-                {{ new Date().getFullYear() }} — <strong><a href="https://www.meeovi.com">Meeovi LLC</a></strong>
-            </v-col>
-        </v-row>
-    </v-footer>
+    <div class="text-center">
+        <v-dialog v-model="dialog">
+            <template v-slot:activator="{ props }">
+                <v-btn class="feedButton" icon="fas fa-plus" color="orange" title="Post to Social Feed" v-bind="props">
+                </v-btn>
+            </template>
+
+            <v-card>
+                <v-textarea title="What's happening?" variant="underlined"></v-textarea>
+                <v-row>
+                    <v-col cols="4">
+                        <v-file-input prepend-icon="fas fa-image" accept="image/*"></v-file-input>
+                    </v-col>
+                    <v-col cols="4">
+                        <v-file-input prepend-icon="fas fa-video" accept="video/*"></v-file-input>
+                    </v-col>
+                    <v-col cols="4">
+                        <v-btn title="Post" color="info">Post</v-btn>
+                    </v-col>
+                </v-row>
+                <v-card-actions>
+                    <v-btn color="primary" block @click="dialog = false">Close</v-btn>
+                </v-card-actions>
+            </v-card>
+        </v-dialog>
+    </div>
 </template>
+
+<script>
+    export default {
+        data() {
+            return {
+                dialog: false,
+            }
+        },
+    }
+</script>
+
+<script setup>
+
+</script>

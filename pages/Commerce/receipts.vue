@@ -1,5 +1,6 @@
 <template>
     <div>
+        <profilebar />
         <section data-bs-version="5.1" class="features16 cid-twc33vqs90" id="features16-1i" data-sortbtn="btn-primary">
 
     
@@ -129,7 +130,10 @@
 </template>
 
 <script>
+import profilebar from '../../components/Menus/profilebar.vue'
+
 export default {
+    components: { profilebar },
     
 }
 </script>

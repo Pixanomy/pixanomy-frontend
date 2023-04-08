@@ -29,26 +29,44 @@ body {
     border: black;
 }
 
-.section-content, .section-name, .pricing1, .info1, .features10, .shop3 {
+.section-content, .section-name, .pricing1 {
     background-color: transparent !important;
 }
 
-.header4 {
-    background-repeat: no-repeat;
-    background-color: transparent;
-    background-position: center;
-    background-size: cover !important;
+.accountDropdown h6 {
+    padding-left: 15px;
+    padding-top: 10px;
 }
 
-.settingsCard, .settingsCard table {
-    width: 100% !important;
-    height: 100% !important;
+.lowerbar h5 {
+    padding: 15px;
+}
+
+.lowerbar a {
+    color: white;
+}
+
+.rightnav {
+    padding-top: 35px;
+    position: relative;
+}
+
+.rightnav li {
+    display: inline-block;
+}
+
+.livebar {
+    height: 70px !important;
+}
+
+.livebar .v-btn {
+    height: auto !important;
 }
 
 /******************* Main Section CSS *********/
 
 #mainSection {
-    top: 0px !important;
+    top: 10px !important;
     position: relative !important;
     left: 0px;
     width: 100% !important;
@@ -93,6 +111,44 @@ body {
     padding: 50px;
 }
 
+.categorySheet {
+    background-color: transparent !important;
+}
+
+.categoryPage h4 {
+    color: white;
+    padding-top: 30px;
+    padding-left: 5%;
+}
+
+.sliderProducts h4, .sliderCreators h4 {
+    padding-top: 30px;
+    padding-left: 5%;
+}
+
+.productPage {
+    padding: 20px;
+}
+
+.productRightBar {
+    padding: 10px;
+}
+
+.feedButton {
+    z-index: 9999999 !important;
+    float: right;
+    right: 20px;
+    bottom: 20px;
+    position: fixed;
+}
+
+/******************** Commerce CSS ************/
+
+.cartPage {
+    padding: 20px;
+}
+
+
 /******************** Sidebar CSS *************/
 
 #sidebarNav {
@@ -107,4 +163,38 @@ body {
 .sidebarSection {
     height: 100% !important;
     width: 290px !important;
+}
+
+/********************* Social CSS **************/
+
+.newsfeed-channel {
+    padding: 10px;
+}
+
+.centralfeed {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.feedcomments {
+    background-color: #232323 !important;
+}
+
+.livefeed {
+    padding-top: 10px;
+}
+
+/****************** Social Profile ****************/
+
+.profilePage {
+    padding: 10px;
+}
+
+.profilePage h4 {
+    width: 100%;
+    text-align: center;
+}
+
+.people5, .people1, .features10, .features12, .teams1, .features19, .flip-card, .features13, .pricing2, .plan, .content2, .mbr-gallery, .mbr-section {
+    background-color: transparent !important;
 }
