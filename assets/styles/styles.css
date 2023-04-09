@@ -203,6 +203,15 @@ body {
     text-align: center;
 }
 
-.people5, .people1, .features10, .features12, .teams1, .features19, .flip-card, .features13, .pricing2, .plan, .content2, .mbr-gallery, .mbr-section {
+.people5, .content7, .features3, .people1, .features10, .features12, .teams1, .features19, .flip-card, .features13, .pricing2, .plan, .content2, .mbr-gallery, .mbr-section {
     background-color: transparent !important;
+}
+
+.features8 .content-container {
+    width: 550px !important;
+    height: 250px !important;
+}
+
+.exploreContainer {
+    padding: 20px;
 }

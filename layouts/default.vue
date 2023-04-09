@@ -14,6 +14,7 @@
         <v-btn prepend-icon="fas fa-home" size="x-small" stacked variant="text" href="/">Home</v-btn>
         <search />
         <v-btn prepend-icon="fas fa-tv" size="x-small" stacked variant="text" href="/categories/visuals">Visuals</v-btn>
+        <v-btn prepend-icon="fas fa-photo-film" size="x-small" stacked variant="text" href="/explore/">Explore</v-btn>
         <v-btn prepend-icon="fas fa-arrow-up-from-bracket" size="x-small" stacked variant="text" href="/upload">Upload</v-btn>
         <v-btn prepend-icon="fas fa-bell" size="x-small" stacked variant="text" href="/notifications">Notifications</v-btn>
       <v-spacer></v-spacer>

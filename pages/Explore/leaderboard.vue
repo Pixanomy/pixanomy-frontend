@@ -1,45 +1,40 @@
 <template>
     <div>
-    <exploremenu />
-    <section data-bs-version="5.1" class="features8 bootcampm5 cid-twkWO1AME2" id="afeatures8-1o">
+        <exploremenu />
+        <v-toolbar title="Leaderboard" color="green"></v-toolbar>
+        <v-row class="exploreContainer">
+            <v-col cols="4">
+                <v-card class="mx-auto" max-width="400">
+                    <v-img class="align-end text-white" src="https://cdn.vuetifyjs.com/images/cards/docks.jpg" cover>
+                        <v-card-title>Top 10 Australian beaches</v-card-title>
+                    </v-img>
 
-    
+                    <v-card-subtitle class="pt-4">
+                        Number 10
+                    </v-card-subtitle>
 
-    
-    
-<div class="container">
-    <div class="row">
-        <div class="content-container col-12">
-            <div class="content-wrapper">
-                <div class="img-container">
-                    <div class="image-wrapper">
-                        <div class="img-bg"></div>
-                        <div class="img-box">
-                            <img src="../../assets/images/features8.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="text-wrapper">
-                    <h6 class="card-title mbr-fonts-style display-5">
-                        Identify skill gaps of developers
-                    </h6>
-                    <p class="mbr-text mbr-fonts-style mb-0 display-4">
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</section>
+                    <v-card-text>
+                        <div>Whitehaven Beach</div>
+                    </v-card-text>
+
+                    <v-card-actions>
+                        <v-btn color="green">
+                            Explore
+                        </v-btn>
+                    </v-card-actions>
+                </v-card>
+            </v-col>
+        </v-row>
     </div>
 </template>
 
 <script>
-import exploremenu from '../../components/Menus//exploremenu.vue'
+    import exploremenu from '../../components/Menus//exploremenu.vue'
 
     export default {
-        components: { exploremenu }
+        components: {
+            exploremenu
+        }
     }
 </script>
 
