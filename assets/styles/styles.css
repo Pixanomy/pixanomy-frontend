@@ -67,6 +67,10 @@ body {
     width: 100% !important;
 }
 
+.uploadPage {
+    padding: 50px;
+}
+
 /******************* Main Section CSS *********/
 
 #mainSection {
