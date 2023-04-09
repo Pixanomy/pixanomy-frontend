@@ -1,219 +1,125 @@
 <template>
-    <div>
-        <section class="video5 cid-sC3S8kznq5" id="video5-2v">
-    
-    
-    <div class="container">
-        <div class="title-wrapper mb-5">
-            
-        </div>
-        <div class="row align-items-center">
-            <div class="col-12 col-lg-7 video-block">
-                <div class="video-wrapper"><iframe class="mbr-embedded-video" src="https://www.youtube.com/embed/VA8PzkQa8d8?rel=0&amp;amp;showinfo=0&amp;autoplay=0&amp;loop=0" width="1280" height="720" frameborder="0" allowfullscreen></iframe></div>
-                
-            </div>
-            <div class="col-12 col-lg">
-                <div class="text-wrapper">
-                    <h3 class="mbr-section-subtitle mbr-fonts-style mb-3 display-5">
-                        <strong>View in Action</strong></h3>
-                    <p class="mbr-text mbr-fonts-style display-7">By:<br>Published On:<br><br>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    <div class="productPage">
+        <v-row>
+            <v-col cols="8">
+                <v-card>
+                    <video src="" controls autoplay></video>
+                </v-card>
 
-<section class="features14 cid-sC3SUMqJhE" id="features15-2y">
+                <v-row>
+                    <v-col cols="8">
+                        <v-btn prepend-icon="fas fa-star" variant="plain" title="Add to Favorites">Add to Favorites
+                        </v-btn>
+                    </v-col>
 
-    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="card col-12 col-md-6 col-lg-3">
-                <div class="card-wrapper">
-                    <span class="mbr-iconfont m-auto mobi-mbri-clock mobi-mbri"></span>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style mb-2 display-7"><strong>Categories</strong></h4>
-                        <h5 class="card-text mbr-fonts-style display-4">Home &amp; Garden</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="card col-12 col-md-6 col-lg-3">
-                <div class="card-wrapper">
-                    <span class="mbr-iconfont m-auto mobi-mbri-preview mobi-mbri"></span>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style mb-2 display-7"><strong>Views</strong></h4>
-                        <h5 class="card-text mbr-fonts-style display-4">24,000</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="card col-12 col-md-6 col-lg-3">
-                <div class="card-wrapper">
-                    <span class="mbr-iconfont m-auto mobi-mbri-down mobi-mbri"></span>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style mb-2 display-7">
-                            <strong>Download This Video</strong></h4>
-                        <h5 class="card-text mbr-fonts-style display-4">Login to Download</h5>
-                    </div>
+                    <v-col cols="4">
+                        <v-btn prepend-icon="fas fa-download" variant="plain" title="Download"></v-btn>
+                        <v-btn prepend-icon="fas fa-share" variant="plain" title="Share on social"></v-btn>
+                        <v-btn prepend-icon="fas fa-flag" variant="plain" title="Report"></v-btn>
+                    </v-col>
 
-                </div>
-            </div>
-            <div class="card col-12 col-md-6 col-lg-3">
-                <div class="card-wrapper">
-                    <span class="mbr-iconfont m-auto mobi-mbri-user-2 mobi-mbri"></span>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style mb-2 display-7"><strong>Subscribe</strong></h4>
-                        <h5 class="card-text mbr-fonts-style display-7">Login to Subscribe</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+                    <v-spacer></v-spacer>
+                    <v-col cols="12">
+                        <v-card class="mx-auto" title="Creator Name" subtitle="Published"
+                            text="This is content description" variant="plain"
+                            prepend-avatar="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"></v-card>
+                    </v-col>
 
-<section class="features3 cid-sC3SnvKKxe" id="features3-2x">
-    
-    
-    <div class="container">
-        <div class="mbr-section-head">
-            <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
-                <strong>Similar Videos</strong></h4>
-            
-        </div>
-        <div class="row mt-4">
-            <div class="item features-image сol-12 col-md-6 col-lg-4">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img src="../../assets/images/mbr-676x459.jpg" alt="">
-                    </div>
-                    <div class="item-content">
-                        <h5 class="item-title mbr-fonts-style display-7"><strong>Lorem Ipsum</strong></h5>
-                        <h6 class="item-subtitle mbr-fonts-style mt-1 display-7">
-                            <em>Card Subtitle</em>
-                        </h6>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="item features-image сol-12 col-md-6 col-lg-4">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img src="../../assets/images/mbr-676x459.jpg" alt="">
-                    </div>
-                    <div class="item-content">
-                        <h5 class="item-title mbr-fonts-style display-7"><strong>Lorem Ipsum</strong></h5>
-                        <h6 class="item-subtitle mbr-fonts-style mt-1 display-7">
-                            <em>Card Subtitle</em>
-                        </h6>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="item features-image сol-12 col-md-6 col-lg-4">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img src="../../assets/images/mbr-676x459.jpg" alt="">
-                    </div>
-                    <div class="item-content">
-                        <h5 class="item-title mbr-fonts-style display-7"><strong>Lorem Ipsum</strong></h5>
-                        <h6 class="item-subtitle mbr-fonts-style mt-1 display-7">
-                            <em>Card Subtitle</em>
-                        </h6>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+                    <v-col cols="3">
+                        <v-btn variant="plain" prepend-icon="fas fa-star">
+                            783 Favorites
+                            <v-menu activator="parent">
+                                <v-list>
+                                    <v-list-item v-for="(item, index) in items" :key="index" :value="index">
+                                        <v-list-item-title>{{ item.title }}</v-list-item-title>
+                                    </v-list-item>
+                                </v-list>
+                            </v-menu>
+                        </v-btn>
+                    </v-col>
 
-<section class="content4 cid-sC3TwZn9ro" id="content4-2z">
-    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="title col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2">
-                    <strong>Comments</strong></h3>
-                <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-5">
-                    Comments goes here</h4>
-                
-            </div>
-        </div>
-    </div>
-</section>
+                    <v-col cols="3">
+                        <v-btn variant="plain" prepend-icon="fas fa-comments">
+                            90 Comments
+                            <v-menu activator="parent">
+                                <v-list>
+                                    <v-list-item v-for="(item, index) in items" :key="index" :value="index">
+                                        <v-list-item-title>{{ item.title }}</v-list-item-title>
+                                    </v-list-item>
+                                </v-list>
+                            </v-menu>
+                        </v-btn>
+                    </v-col>
 
-<section class="content2 cid-sC3Si11MPr" id="content2-2w">
-    
-    
-    <div class="container">
-        <div class="mbr-section-head">
-            <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Across Meeovi Theater</strong></h4>
-            
-        </div>
-        <div class="row mt-4">
-            <div class="item features-image сol-12 col-md-6 col-lg-4">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img src="../../assets/images/product5.jpg" alt="" title="">
-                    </div>
-                    <div class="item-content">
-                        <h5 class="item-title mbr-fonts-style display-5">Lorem Ipsum</h5>
-                        <h6 class="item-subtitle mbr-fonts-style mt-1 display-7">
-                            <strong>John Smith</strong><em> 10-10-2025</em></h6>
-                        
-                    </div>
-                    <div class="mbr-section-btn item-footer mt-2"><a href="" class="btn item-btn btn-danger display-7" target="_blank">Read More
-                            &gt;</a></div>
-                </div>
-            </div>
-            <div class="item features-image сol-12 col-md-6 col-lg-4">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img src="../../assets/images/product4.jpg" alt="" title="">
-                    </div>
-                    <div class="item-content">
-                        <h5 class="item-title mbr-fonts-style display-5">Lorem Ipsum</h5>
-                        <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><strong>Ann
-                                Brown</strong><em>&nbsp;09-09-2025</em></h6>
-                        
-                    </div>
-                    <div class="mbr-section-btn item-footer mt-2"><a href="" class="btn item-btn btn-danger display-7" target="_blank">Read More
-                            &gt;</a></div>
-                </div>
-            </div>
-            <div class="item features-image сol-12 col-md-6 col-lg-4">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img src="../../assets/images/product3.jpg" alt="" title="">
-                    </div>
-                    <div class="item-content">
-                        <h5 class="item-title mbr-fonts-style display-5">Lorem Ipsum</h5>
-                        <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><strong>Jessica Doe
-                            </strong><em>08-08-2025</em></h6>
-                        
-                    </div>
-                    <div class="mbr-section-btn item-footer mt-2"><a href="" class="btn item-btn btn-danger display-7" target="_blank">Read More
-                            &gt;</a></div>
-                </div>
-            </div>
+                    <v-col cols="3">
+                        <v-btn variant="plain" prepend-icon="fas fa-eye">
+                            61.7K Views
+                            <v-menu activator="parent">
+                                <v-list>
+                                    <v-list-item v-for="(item, index) in items" :key="index" :value="index">
+                                        <v-list-item-title>{{ item.title }}</v-list-item-title>
+                                    </v-list-item>
+                                </v-list>
+                            </v-menu>
+                        </v-btn>
+                    </v-col>
 
-        </div>
-    </div>
-</section>
-<relatedvideo />
+                    <v-col cols="12">
+                        <v-form action="" ref="form" v-model="form">
+                            <v-textarea v-model="comment" clearable label="Leave A Comment"
+                                prepend-icon="fas fa-comments" variant="outlined"></v-textarea>
+                            <v-card-actions>
+                                <v-btn variant="text" @click="$refs.form.reset()">
+                                    Clear
+                                </v-btn>
+                                <v-spacer></v-spacer>
+                                <v-btn :loading="isLoading" color="green">
+                                    Submit
+                                </v-btn>
+                            </v-card-actions>
+                        </v-form>
+                    </v-col>
+
+                    <v-col cols="12">
+                        <v-list lines="one" variant="tonal">
+                            <v-list-item title="Comment Title" subtitle="Comment Date"
+                                prepend-avatar="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg">
+                                comment description
+                            </v-list-item>
+                        </v-list>
+                    </v-col>
+                </v-row>
+            </v-col>
+
+            <v-col cols="4">
+                <relatedsidebar />
+            </v-col>
+        </v-row>
+        <relatedvideo />
     </div>
 </template>
 
 <script>
-import relatedvideo from '../../components/Related/relatedvideos.vue'
+    import relatedvideo from '../../../components/Related/relatedvideo.vue'
+    import relatedsidebar from '../../../components/Product/relatedsidebar.vue'
 
-export default {
-    components: { relatedvideo },
-}
+    export default {
+        components: {
+            relatedvideo,
+            relatedsidebar
+        },
+        data: () => ({
+            form: false,
+            isLoading: false,
+            rules: {
+                email: v => !!(v || '').match(/@/) || 'Please enter a valid email',
+                length: len => v => (v || '').length >= len || `Invalid character length, required ${len}`,
+                password: v => !!(v || '').match(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*(_|[^\w])).+$/) ||
+                    'Password must contain an upper case letter, a numeric character, and a special character',
+                required: v => !!v || 'This field is required',
+            },
+        }),
+    }
 </script>
 
 <script setup>
