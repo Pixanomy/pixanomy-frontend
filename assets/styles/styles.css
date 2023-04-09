@@ -63,6 +63,10 @@ body {
     height: auto !important;
 }
 
+.productVideoPlayer {
+    width: 100% !important;
+}
+
 /******************* Main Section CSS *********/
 
 #mainSection {

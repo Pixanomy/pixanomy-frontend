@@ -3,7 +3,7 @@
         <v-row>
             <v-col cols="8">
                 <v-card>
-                    <video src="" controls autoplay></video>
+                    <video class="productVideoPlayer" src="" controls autoplay></video>
                 </v-card>
 
                 <v-row>
