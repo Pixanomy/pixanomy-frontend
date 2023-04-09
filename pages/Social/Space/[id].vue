@@ -79,7 +79,7 @@
         <div class="item features-image сol-12 col-md-6 col-lg-4">
             <div class="item-wrapper">
                 <div class="item-img">
-                    <img src="../../../assetsimages/mbr-2-696x696.jpg" alt="">
+                    <img src="../../../assets/images/mbr-2-696x696.jpg" alt="">
                 </div>
                 <div class="item-content">
                     <h5 class="item-title mbr-fonts-style display-7"><strong>The Devi'ere</strong></h5>
@@ -93,7 +93,7 @@
         <div class="item features-image сol-12 col-md-6 col-lg-4">
             <div class="item-wrapper">
                 <div class="item-img">
-                    <img src="../../../assetsimages/mbr-1-696x696.jpg" alt="">
+                    <img src="../../../assets/images/mbr-1-696x696.jpg" alt="">
                 </div>
                 <div class="item-content">
                     <h5 class="item-title mbr-fonts-style display-7"><strong>Mona Lisa Garments</strong></h5>
@@ -107,7 +107,7 @@
         <div class="item features-image сol-12 col-md-6 col-lg-4">
             <div class="item-wrapper">
                 <div class="item-img">
-                    <img src="../../../assetsimages/mbr-696x690.jpg" alt="">
+                    <img src="../../../assets/images/mbr-696x690.jpg" alt="">
                 </div>
                 <div class="item-content">
                     <h5 class="item-title mbr-fonts-style display-7"><strong>Dancing Statues</strong></h5>
@@ -135,7 +135,7 @@
         <div class="item features-image сol-12 col-md-6 col-lg-4">
             <div class="item-wrapper">
                 <div class="item-img">
-                    <img src="../../../assetsimages/mbr-696x557.jpg" alt="">
+                    <img src="../../../assets/images/mbr-696x557.jpg" alt="">
                 </div>
                 <div class="item-content">
                     <h5 class="item-title mbr-fonts-style display-7"><strong>Categorizing our Lives</strong></h5>
@@ -149,7 +149,7 @@
         <div class="item features-image сol-12 col-md-6 col-lg-4">
             <div class="item-wrapper">
                 <div class="item-img">
-                    <img src="../../../assetsimages/mbr-696x889.jpg" alt="">
+                    <img src="../../../assets/images/mbr-696x889.jpg" alt="">
                 </div>
                 <div class="item-content">
                     <h5 class="item-title mbr-fonts-style display-7"><strong>Finding the Right Item</strong></h5>
@@ -163,7 +163,7 @@
         <div class="item features-image сol-12 col-md-6 col-lg-4">
             <div class="item-wrapper">
                 <div class="item-img">
-                    <img src="../../../assetsimages/mbr-696x464.jpg" alt="">
+                    <img src="../../../assets/images/mbr-696x464.jpg" alt="">
                 </div>
                 <div class="item-content">
                     <h5 class="item-title mbr-fonts-style display-7"><strong>How to Buy at the Paris Group</strong></h5>
