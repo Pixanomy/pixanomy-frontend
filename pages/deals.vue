@@ -28,7 +28,7 @@
                     <div class="item features-image сol-12 col-md-6 col-lg-4">
                         <div class="item-wrapper">
                             <div class="item-img">
-                                <img src="../../assets/images/mbr-969x712.jpg" alt="">
+                                <img src="../assets/images/mbr-969x712.jpg" alt="">
                             </div>
                             <div class="item-content">
 
@@ -43,7 +43,7 @@
                     <div class="item features-image сol-12 col-md-6 col-lg-4">
                         <div class="item-wrapper">
                             <div class="item-img">
-                                <img src="../../assets/images/mbr-969x727.png" alt="">
+                                <img src="../assets/images/mbr-969x727.png" alt="">
                             </div>
                             <div class="item-content">
 
@@ -58,7 +58,7 @@
                     <div class="item features-image сol-12 col-md-6 col-lg-4">
                         <div class="item-wrapper">
                             <div class="item-img">
-                                <img src="../../assets/images/mbr-969x1368.jpg" alt="">
+                                <img src="../assets/images/mbr-969x1368.jpg" alt="">
                             </div>
                             <div class="item-content">
 
