@@ -1,36 +1,53 @@
 <template>
-    <div>
-        <section data-bs-version="5.1" class="header4 cid-sqmIHUMHoR mbr-fullscreen mbr-parallax-background"
-            id="header4-0" data-sortbtn="btn-primary">
+    <v-row>
+        <template v-for="(image,imgIdx) in imageLayout" :key="imgIdx">
+            <v-col :cols="image.cols">
+                <a href=""><v-img :src="`https://picsum.photos/500/300?image=${image.cols * 20}`" cover height="100%"></v-img></a>
+            </v-col>
 
-
-            <div class="mbr-overlay"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="content-wrap">
-
-                        <h2 class="mbr-section-title mbr-fonts-style mbr-white mb-3 display-7">Header Subtitle</h2>
-                        <p class="mbr-fonts-style mbr-text mbr-white mb-3 display-7">
-                            Block with flexible configuration, free vertical and horizontal content movement (only when
-                            full screen is on)
-                        </p>
-
-
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+            <v-col v-if="image.children" cols="6" class="d-flex flex-column">
+                <v-row>
+                    <v-col v-for="(children,childIdx) in image.children" :key="childIdx" :cols="children.cols">
+                        <a href=""><v-img :src="`https://picsum.photos/500/300?image=${children.cols + childIdx}`" cover
+                            height="100%"></v-img></a>
+                    </v-col>
+                </v-row>
+            </v-col>
+        </template>
+    </v-row>
 </template>
 
 <script>
-    //import callout from '../components/homePage/callout.vue'
-
-
     export default {
-        components: {
-            //callout,
-        }
+        data: () => ({
+            imageLayout: [{
+                    cols: 4
+                },
+                {
+                    cols: 8,
+                    children: [{
+                        cols: 12
+                    }, {
+                        cols: 12
+                    }],
+                },
+                {
+                    cols: 6
+                },
+                {
+                    cols: 3
+                },
+                {
+                    cols: 9
+                },
+                {
+                    cols: 4
+                },
+                {
+                    cols: 8
+                },
+            ],
+        }),
     }
 </script>
 
