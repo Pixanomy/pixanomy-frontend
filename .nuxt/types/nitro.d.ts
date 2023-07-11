@@ -14,7 +14,7 @@ declare module 'nitropack' {
     '/api/_content/query': {
       'get': Awaited<ReturnType<typeof import('../../node_modules/@nuxt/content/dist/runtime/server/api/query').default>>
     }
-    '/api/_content/cache.1689092267810.json': {
+    '/api/_content/cache.json': {
       'get': Awaited<ReturnType<typeof import('../../node_modules/@nuxt/content/dist/runtime/server/api/cache').default>>
     }
     '/api/_content/navigation/:qid/**:params': {

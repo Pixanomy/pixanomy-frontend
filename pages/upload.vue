@@ -4,8 +4,7 @@
         <v-card>
             <v-form action="" ref="form" v-model="form">
                 <v-text-field label="Name"></v-text-field>
-                <v-combobox chips label="Category" multiple
-                    :items="['California', 'Colorado', 'Florida', 'Georgia', 'Texas', 'Wyoming']"></v-combobox>
+                <v-select chips label="Category" multiple :items="['Image', 'Video', 'Digital Product', 'Physical Product']"></v-select>
                 <v-textarea label="Description"></v-textarea>
                 <v-file-input label="Upload File" multiple></v-file-input>
                 <v-card-actions>

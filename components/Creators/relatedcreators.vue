@@ -22,7 +22,11 @@
 
 <script>
 export default {
-    
+    data(){
+            return {
+                model: null,
+            }
+        }
 }
 </script>
 

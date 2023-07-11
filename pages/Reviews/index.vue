@@ -75,9 +75,11 @@
             bestsellers,
             relatedauthors
         },
-        data: () => ({
-            model: null,
-        }),
+        data(){
+            return {
+                model: null,
+            }
+        }
     }
 </script>
 

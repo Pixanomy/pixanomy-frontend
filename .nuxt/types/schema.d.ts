@@ -3,9 +3,10 @@ declare module '@nuxt/schema' {
   interface NuxtConfig {
     ["content"]?: typeof import("@nuxt/content").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["apollo"]?: typeof import("@nuxtjs/apollo").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["meilisearch"]?: typeof import("nuxt-meilisearch").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["nuxt-config-schema"]?: typeof import("nuxt-config-schema").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["telemetry"]?: typeof import("@nuxt/telemetry").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    modules?: (NuxtModule | string | [NuxtModule | string, Record<string, any>] | ["@nuxt/content", NuxtConfig["content"]] | ["@nuxtjs/apollo", NuxtConfig["apollo"]] | ["nuxt-config-schema", NuxtConfig["nuxt-config-schema"]] | ["@nuxt/telemetry", NuxtConfig["telemetry"]])[],
+    modules?: (NuxtModule | string | [NuxtModule | string, Record<string, any>] | ["@nuxt/content", NuxtConfig["content"]] | ["@nuxtjs/apollo", NuxtConfig["apollo"]] | ["nuxt-meilisearch", NuxtConfig["meilisearch"]] | ["nuxt-config-schema", NuxtConfig["nuxt-config-schema"]] | ["@nuxt/telemetry", NuxtConfig["telemetry"]])[],
   }
   interface RuntimeConfig {
    app: {
@@ -139,6 +140,32 @@ declare module '@nuxt/schema' {
          stripQueryParameters: boolean,
       },
    },
+
+   serverMeilisearchClient: {
+      hostUrl: string,
+
+      searchApiKey: string,
+
+      adminApiKey: string,
+
+      serverSideUsage: boolean,
+
+      instantSearch: {
+         theme: string,
+      },
+
+      clientOptions: {
+         placeholderSearch: boolean,
+
+         paginationTotalHits: number,
+
+         finitePagination: boolean,
+
+         primaryKey: any,
+
+         keepZeroFacets: boolean,
+      },
+   },
   }
   interface PublicRuntimeConfig {
    content: {
@@ -146,7 +173,7 @@ declare module '@nuxt/schema' {
 
       defaultLocale: any,
 
-      integrity: number,
+      integrity: any,
 
       experimental: {
          stripQueryParameters: boolean,
@@ -226,6 +253,30 @@ declare module '@nuxt/schema' {
          depth: number,
 
          exclude: Array<number>,
+      },
+   },
+
+   meilisearchClient: {
+      hostUrl: string,
+
+      searchApiKey: string,
+
+      serverSideUsage: boolean,
+
+      instantSearch: {
+         theme: string,
+      },
+
+      clientOptions: {
+         placeholderSearch: boolean,
+
+         paginationTotalHits: number,
+
+         finitePagination: boolean,
+
+         primaryKey: any,
+
+         keepZeroFacets: boolean,
       },
    },
   }

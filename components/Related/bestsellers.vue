@@ -21,9 +21,11 @@
 
 <script>
     export default {
-        data: () => ({
-            model: null,
-        }),
+        data(){
+            return {
+                model: null,
+            }
+        }
     }
 </script>
 

@@ -153,6 +153,11 @@
 		components: {
 			billingaddress,
 			shippingaddress
+		},
+		data(){
+			return {
+				tab: null,
+			}
 		}
 	}
 </script>

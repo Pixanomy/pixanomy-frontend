@@ -72,8 +72,8 @@
       "videojs-contrib-quality-levels": "^3.0.0",
       "videojs-share": "^3.2.1",
       "vue-chartjs": "^5.2.0",
-      "vue-instantsearch": "^4.8.1",
+      "vue-instantsearch": "^4.10.5",
       "vue-matomo": "^4.2.0",
-      "vuetify": "^3.3.5"
+      "vuetify": "latest"
    }
 }
