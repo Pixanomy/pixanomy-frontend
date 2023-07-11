@@ -61,11 +61,8 @@
       "vue-demi": [
         "node_modules/nuxt/dist/app/compat/vue-demi"
       ],
-      "#gql": [
-        ".nuxt/gql"
-      ],
-      "#gql/*": [
-        ".nuxt/gql/*"
+      "#apollo": [
+        ".nuxt/apollo"
       ],
       "#head": [
         "node_modules/nuxt/dist/head/runtime"

@@ -4,16 +4,6 @@ import {
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  app: {
-    head: {
-      script: [{
-        src: process.env.NUXT_PUBLIC_UMAMI_HOST,
-        async: true,
-        'data-website-id': process.env.NUXT_PUBLIC_UMAMI_ID
-      }],
-    },
-  },
-
   extends: ['@sidebase/core'],
 
   css: [
@@ -35,12 +25,10 @@ export default defineNuxtConfig({
   ],
 
   modules: [
-    'nuxt-graphql-client',
     //'@sidebase/nuxt-auth',
     '@nuxt/content',
+    '@nuxtjs/apollo',
     'nuxt-meilisearch',
-    'nuxt-directus',
-    //'nuxt-medusa',
   ],
 
   /*auth: {
@@ -87,22 +75,28 @@ export default defineNuxtConfig({
     },
   }, */
 
-  directus: {
-    url: process.env.DIRECTUS_URL,
-    auth: {
-      email: process.env.DIRECTUS_EMAIL,
-      password: process.env.DIRECTUS_PASSWORD,
-      token: process.env.DIRECTUS_TOKEN,
-    }
+  runtimeConfig: {
+    websiteURL: process.env.GQL_HOST,
+    websiteToken: process.env.WEBSITE_TOKEN,
   },
 
-/*  medusa: {
-    baseUrl: process.env.MEDUSA_URL,
-    publishableApiKey: process.env.PUBLISHABLE_API_key,
-    maxRetries: 3,
-    global: true,
-    server: false
-  }, */
+  apollo: {
+    authType: "Bearer",
+    authHeader: "Authorization",
+    tokenStorage: "cookie",
+    clients: {
+      default: {
+        tokenName: "apollo-token",
+        httpEndpoint: process.env.GQL_HOST,
+      /*  httpLinkOptions: {
+          headers: {
+            'x-magento-cache-id': process.env.GQL_KEY,
+            'x-magento-tags': 'FPC'
+          }
+        } */
+      },
+    },
+  },
 
   meilisearch: {
     hostUrl: process.env.HOSTURL,
@@ -114,26 +108,9 @@ export default defineNuxtConfig({
     }
   },
 
-  runtimeConfig: {
-    public: {
-      GQL_HOST: process.env.GQL_HOST,
-      'graphql-client': {
-        watch: true,
-        autoImport: true,
-        functionPrefix: 'Gql',
-        documentPaths: ['./graphql/queries/'],
-        preferGETQueries: false
-      },
-    }
-  },
-
-
-
   build: {
     transpile: [
       'vuetify',
-      '@apollo/client',
-      'ts-invariant/process',
       "@fortawesome/vue-fontawesome",
       "@fortawesome/fontawesome-svg-core",
       "@fortawesome/pro-solid-svg-icons",

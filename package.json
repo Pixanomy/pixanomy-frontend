@@ -1,21 +1,24 @@
 {
    "name": "alternate-template",
    "version": "0.0.4",
-   "description": "This is a template for the Meeovi.",
+   "description": "This is a template for the pixanomy.",
    "author": "Sebastian Hilton (https://www.sebastianhilton.com)",
-   "homepage": "https://www.meeovi.com",
+   "homepage": "https://www.pixanomy.com",
    "repository": {
       "type": "git",
-      "url": "git+https://github.com/Meeovi/meeovi-frontend"
+      "url": "git+https://github.com/pixanomy/pixanomy-frontend"
    },
    "bugs": {
-      "url": "https://github.com/Meeovi/meeovi-frontend/issues"
+      "url": "https://github.com/pixanomy/pixanomy-frontend/issues"
    },
    "license": "MIT",
    "private": true,
+   "prisma:": {
+      "schema": "node_modules/graphql-yoga-prisma/prisma/schema.prisma"
+   },
    "scripts": {
       "alternate-commit": "git add . && git commit -m \"ready for update\"",
-      "alternate-update": "git pull \"https://github.com/Meeovi/meeovi-frontend\"",
+      "alternate-update": "git pull \"https://github.com/pixanomy/pixanomy-frontend\"",
       "build": "nuxt build && mesh build",
       "start": "mesh start --port 4001",
       "dev": "nuxt dev --port 3011",
@@ -23,40 +26,44 @@
       "generate": "nuxt generate",
       "prebuild": "mesh build",
       "preview": "nuxt preview",
+      "analyze": "nuxi analyze",
       "postinstall": "nuxt prepare",
-      "all": "npm-run-all --parallel start dev"
+      "yoga": "ts-node node_modules/graphql-yoga-prisma/index.ts",
+      "prisma-dev": "npx prisma generate",
+      "prisma": "prisma generate --schema=node_modules/graphql-yoga-prisma/prisma/schema.prisma",
+      "db-pull": "prisma db pull --schema=node_modules/graphql-yoga-prisma/prisma/schema.prisma",
+      "all": "npm-run-all --parallel yoga dev"
    },
    "devDependencies": {
       "@nuxt/content": "^2.3.0",
-      "@sidebase/nuxt-auth": "^0.3.3",
+      "@nuxtjs/apollo": "next",
       "@types/node": "^16.11.10",
-      "graphql": "^15.8.0",
+      "graphql": "latest",
       "npm-run-all": "^4.1.5",
       "nuxt": "latest",
-      "nuxt-meilisearch": "^0.1.7",
-      "typescript": "4.5.2"
+      "nuxt-meilisearch": "latest",
+      "typescript": "latest"
    },
    "dependencies": {
       "@fortawesome/fontawesome-svg-core": "^6.2.1",
       "@fortawesome/free-solid-svg-icons": "^6.2.1",
       "@fortawesome/vue-fontawesome": "^3.0.2",
-      "@graphile-contrib/pg-many-to-many": "^1.0.2",
-      "@graphql-mesh/cli": "^0.82.30",
-      "@graphql-mesh/graphql": "^0.34.13",
-      "@graphql-mesh/postgraphile": "^0.22.20",
+      "@graphql-mesh/cli": "^0.82.35",
+      "@graphql-mesh/json-schema": "^0.93.1",
+      "@graphql-mesh/mysql": "^0.93.1",
+      "@graphql-mesh/openapi": "^0.93.2",
       "@huntersofbook/naive-ui-nuxt": "^0.5.1",
       "@mdi/font": "^7.1.96",
-      "@meilisearch/instant-meilisearch": "^0.10.1",
       "@nuxt/types": "^2.15.8",
-      "@sidebase/core": "^0.1.3",
-      "@tinymce/tinymce-vue": "^4.0.7",
+      "@sidebase/core": "latest",
+      "@sidebase/nuxt-auth": "latest",
+      "@tinymce/tinymce-vue": "latest",
       "@types/graphql": "^14.5.0",
       "graphql-tag": "^2.12.6",
+      "graphql-yoga-prisma": "^1.0.1",
       "instantsearch.css": "^8.0.0",
-      "jquery": "^3.6.3",
+      "jquery": "latest",
       "keycloak-nuxt-auth-module": "^4.8.4",
-      "nuxt-directus": "^5.1.1",
-      "nuxt-graphql-client": "^0.2.27",
       "nuxt-security": "^0.10.1",
       "sass": "^1.57.0",
       "ts-node": "^10.9.1",
@@ -66,6 +73,7 @@
       "videojs-share": "^3.2.1",
       "vue-chartjs": "^5.2.0",
       "vue-instantsearch": "^4.8.1",
-      "vuetify": "^3.0.5"
+      "vue-matomo": "^4.2.0",
+      "vuetify": "^3.3.5"
    }
 }
